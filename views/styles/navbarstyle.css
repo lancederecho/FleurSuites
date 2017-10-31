@@ -1,0 +1,153 @@
+div.navbar {
+    width: 100%;
+    height: 15%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+    background: transparent; 
+    transition: all ease .8s;
+}
+
+div.navbar.shrink {
+    height: 8%;
+    transition: all ease .8s;
+    background: #222; 
+    box-shadow: 0 0 4px  rgba(0,0,0,0.9);
+}
+
+div.navbar.shrink .navbarlogo  {
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease .5s;
+} 
+
+div.navbar.shrink nav.navbar  {
+    height: 100%;
+    padding-top: 0%;
+    transition: all ease .8s;
+} 
+
+div.navbar.shrink nav.navbar li {
+    margin: 9px;
+    transition: all ease .8s;
+} 
+
+div.navbar.shrink nav.navbar a {
+    font-size: 10;
+    transition: all ease .8s;
+} 
+
+div.navbar.shrink nav.mynavbar  {
+    height: 100%;
+    transition: all ease .8s;
+} 
+
+div.navbar.shrink nav.mynavbar li {
+    bottom: 9px;
+    transition: all ease .8s;
+} 
+
+div.navbar.shrink nav.mynavbar a {
+    font-size: 10;
+    transition: all ease .8s;
+} 
+
+.navbarlogo{
+    z-index: 100;
+    position: fixed;
+    float: left;
+    opacity: .75;
+    left: 5%;
+    top: 16px;
+    transition: all ease .8s;
+}
+
+.navbarlogo:hover {
+    opacity: 1;
+}
+
+nav.mynavbar{
+    height: 100%;   
+    right: 0%; 
+    position: absolute;
+    float: right;
+}
+
+nav.mynavbar ul {
+    list-style: none;
+}
+
+nav.mynavbar li {
+    transition: all ease .8s;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    right: 20px;
+}
+
+nav.mynavbar a {
+    padding: 10px;
+    border: .5px solid white;
+    transition: all ease .8s;
+    color: white;
+    opacity: .6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12.5px;
+}
+
+nav.mynavbar a:hover {
+    opacity: 1;
+    box-shadow: 0 0 3px  rgba(255, 255, 255, 0.6);
+    transition: all ease .5s;
+}
+
+nav.navbar {
+    z-index: 99;
+    padding-top: 2%;
+    padding-left: 4.5%;
+    float: left;
+    position: absolute;
+    transition: all ease .8s;
+}
+
+nav.navbar ul {
+    list-style: none;
+}
+
+nav.navbar li {
+    transition: all ease .8s;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+nav.navbar a {
+    transition: all ease .8s;
+    color: white;
+    opacity: .6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11.5px;
+}
+
+nav.navbar a:hover {
+    opacity: 1;
+}
+
+nav.navbar a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+  
+    position: absolute;
+    top: 17px;
+    width: 0%;
+    transition: all ease-in-out 400ms;
+}
+
+nav.navbar a:hover::before {
+    width: 100%;
+}
