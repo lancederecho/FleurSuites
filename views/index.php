@@ -1,10 +1,10 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Welcome || Fleur Suites</title>
         <script src="js/jquery.js"></script>
         <script src="js/navscroll.js"></script>
         <script src="js/homeSlideshow.js"></script>
+        <link rel="shortcut icon" href="images/title.ico">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/navbarstyle.css">
         <link rel="stylesheet" type="text/css" href="styles/slideshowstyle.css">
@@ -17,19 +17,19 @@
                 <nav class="mynavbar">
                     <ul>
                         <li class="myreservations"><a href="myreservations.html">My Reservations</a></li>
-                        <li class="login"><a href="login.php">LogIn</a></li>
+                        <li class="login"><a href="account/login.php">LogIn</a></li>
                     </ul>
                 </nav>
                 <nav class="navbar">
                     <ul>
-                        <li class="home"><a href="index.html">Home</a></li>
+                        <li class="home"><a href="../index.php">Home</a></li>
                         <li class="accomodations"><a href="accomodations.html">Accomodations</a></li>
                         <li class="contactus"><a href="contactus.html">Contact Us</a></li>
                         <li class="aboutus"><a href="aboutus.html">About Us</a></li>
                     </ul>
                 </nav>
                 <a class="navbarlogo" href="aboutme.html">
-                    <img alt="logo" src="images/logos/LanceLogoWhite.png"/>
+                    <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
                 </a> 
             </div>  
         </header>   
@@ -76,6 +76,10 @@
             var slideIndex = 1;
             showSlides(slideIndex);
         </script>    
+
+        <div class="homebody">
+        
+        </div>
 
     </body>
 
