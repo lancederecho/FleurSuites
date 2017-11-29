@@ -1,3 +1,5 @@
+<?php include "../../controllers/loginfunction.php"; ?>
+
 <html>
     <head>
         <title>LogIn || Fleur Suites</title>

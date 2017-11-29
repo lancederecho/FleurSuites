@@ -22,8 +22,8 @@
 			exit;
 		}
 
-		function select_all_admin(){
-			$query = "SELECT * FROM admin";
+		function select_all_user(){
+			$query = "SELECT * FROM user";
 			$result = mysqli_query($this->conn, $query);			
 			
 			$res = array();

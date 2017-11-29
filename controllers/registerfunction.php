@@ -1,7 +1,12 @@
 <?php include "../../models/Users.php"; ?>
 
 <?php
-    echo "<html><head><link rel='shortcut icon' href='../images/title.ico'></head> ";
+    echo "
+        <html>
+            <title>Register || Fleur Suites</title>
+            <head><link rel='shortcut icon' href='../images/title.ico'></head> 
+        </html>
+    ";
 
     //email
 	$registeremail = isset($_REQUEST['registeremail'])? $_REQUEST["registeremail"]:NULL;

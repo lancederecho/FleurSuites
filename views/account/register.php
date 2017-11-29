@@ -1,7 +1,5 @@
-<html>
-    <title>Register || Fleur Suites</title>
-</html>
 <?php include "../../controllers/registerfunction.php"; ?>
+
 <html>
     <head>
         <script src="../js/jquery.js"></script>
