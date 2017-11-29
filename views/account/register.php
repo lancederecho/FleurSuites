@@ -1,6 +1,9 @@
 <html>
+    <title>Register || Fleur Suites</title>
+</html>
+<?php include "../../controllers/registerfunction.php"; ?>
+<html>
     <head>
-        <title>Register || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
         <script src="../js/homeSlideshow.js"></script>
@@ -17,15 +20,15 @@
                 <nav class="mynavbar">
                     <ul>
                         <li class="myreservations"><a href="myreservations.html">My Reservations</a></li>
-                        <li class="login"><a href="account/login.php">LogIn</a></li>
+                        <li class="login"><a href="login.php">LogIn</a></li>
                     </ul>
                 </nav>
                 <nav class="navbar">
                     <ul>
                         <li class="home"><a href="../index.php">Home</a></li>
-                        <li class="accomodations"><a href="accomodations.html">Accomodations</a></li>
-                        <li class="contactus"><a href="contactus.html">Contact Us</a></li>
-                        <li class="aboutus"><a href="aboutus.html">About Us</a></li>
+                        <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                        <li class="contactus"><a href="../contactus.php">Contact Us</a></li>
+                        <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
                     </ul>
                 </nav>
                 <a class="navbarlogo" href="aboutme.html">
@@ -58,16 +61,32 @@
                         </p>
                         <div class="registeremail">
                             <li class="registeremail">Email Address*</li>
-                            <input type="text" class="registeremail" id="registeremail" name="registeremail" placeholder="Email Address"/><br/>
+                            <input required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="registeremail" id="registeremail" name="registeremail" placeholder="Email Address"/><br/>
                         </div>
                         <div class="registerpass">
                             <li class="registerpass">Password*</li>
-                            <input type="password" class="registerpass" id="registerpass" name="registerpass" placeholder="Password"/><br/>    
+                            <input required type="password" class="registerpass" id="registerpass" name="registerpass" placeholder="Password"/><br/>    
                         </div>
                         <div class="registerconfirm">
                             <li class="registerconfirm">Confirm Password*</li>
-                            <input type="password" class="registerconfirm" id="registerconfirm" name="registerconfirm" placeholder="Confirm Password"/><br/>    
+                            <input required type="password" class="registerconfirm" id="registerconfirm" name="registerconfirm" placeholder="Confirm Password"/><br/>    
                         </div>
+                        <!-- password verification -->
+                        <script>
+                            var password = document.getElementById("registerpass");
+                            var confirm_password = document.getElementById("registerconfirm");
+
+                            function validatePassword(){
+                                if(password.value != confirm_password.value) {
+                                    confirm_password.setCustomValidity("Password does not match.");
+                                } else {
+                                    confirm_password.setCustomValidity('');
+                                }
+                            }
+
+                            password.onchange = validatePassword;
+                            confirm_password.onkeyup = validatePassword;
+                        </script> 
                     </div>
                     <div class="registerpersonalinformation">
                         <p align="left" class="registerpersonalinformation">
@@ -75,8 +94,8 @@
                         </p>
                         <div class="registertitle">
                             <li class="registertitle">Title*</li>
-                            <select name="registertitle" id="registertitle">
-                                <option selected="selected">Select</option>
+                            <select required name="registertitle" id="registertitle">
+                                <option selected="selected" value="">Select</option>
                                 <option value="Mr.">Mr.</option>    
                                 <option value="Mrs.">Mrs.</option> 
                                 <option value="Ms.">Ms.</option> 
@@ -84,16 +103,16 @@
                         </div>
                         <div class="registerfirst">
                             <li class="registerfirst">First Name*</li>
-                            <input type="text" class="registerfirst" id="registerfirst" name="registerfirst" placeholder="First Name"/><br/>    
+                            <input required type="text" pattern="[A-Z][A-Za-z]{1,50}" class="registerfirst" id="registerfirst" name="registerfirst" placeholder="First Name"/><br/>    
                         </div>
                         <div class="registerlast">
                             <li class="registerlast">Last Name*</li>
-                            <input type="text" class="registerlast" id="registerlast" name="registerlast" placeholder="Last Name"/><br/>    
+                            <input required type="text" pattern="[A-Z][A-Za-z]{1,50}" class="registerlast" id="registerlast" name="registerlast" placeholder="Last Name"/><br/>    
                         </div>
-                        <div class="registergender">
+                        <div class="registergender" required>
                             <li class="registergender">Gender*</li>
-                            <select name="registergender" id="registergender">
-                                <option selected="selected">Select</option>
+                            <select required name="registergender" id="registergender">
+                                <option selected="selected" value="">Select</option>
                                 <option value="Male">Male</option>    
                                 <option value="Female">Female</option> 
                             </select><br/>
@@ -101,10 +120,37 @@
                         <div class="registerbirth">
                             <li class="registerbirth">Date of Birth*</li>
                             <div class="registermonth">
-                                <input type="text" class="registermonth" id="registermonth" name="registermonth" placeholder="mm"/><br/>
+                                <select required name="registermonth" id="registermonth">
+                                    <option selected="selected" value="">mm</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select> 
                             </div>
                             <div class="registerday">
-                                <input type="text" class="registerday" id="registerday" name="registerday" placeholder="dd"/><br/>
+                                <?php
+                                    $currently_selected = 01; 
+                                    
+                                    $earliest_day = 31; 
+                                    
+                                    $latest_day = 01; 
+
+                                    print '<select required name="registerday" id="registerday">';
+                                    print '<option selected="selected" value="">dd</option>';
+                                    foreach ( range( $latest_day, $earliest_day ) as $i ) {  
+                                        print '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                    print '</select>';
+                                ?>
                             </div>
                             <div class="registeryear">
                                 <?php
@@ -114,8 +160,8 @@
                                     
                                     $latest_year = date('Y'); 
 
-                                    print '<select>';
-                                    print '<option selected="selected">yy</option>';
+                                    print '<select required name="registeryear" id="registeryear">';
+                                    print '<option selected="selected" value="">yy</option>';
                                     foreach ( range( $latest_year, $earliest_year ) as $i ) {  
                                         print '<option value="'.$i.'"'.($i === $currently_selected ? ' selected="selected"' : '').'>'.$i.'</option>';
                                     }
@@ -130,16 +176,16 @@
                         </p>
                         <div class="registerline1">
                             <li class="registerline1">Address Line 1*</li>
-                            <input type="text" class="registerline1" id="registerline1" name="registerline1" placeholder="Address Line 1"/><br/>
+                            <input required type="text" class="registerline1" id="registerline1" name="registerline1" placeholder="Address Line 1"/><br/>
                         </div>
                         <div class="registercity">
                             <li class="registercity">City*</li>
-                            <input type="password" class="registercity" id="registercity" name="registercity" placeholder="City"/><br/>    
+                            <input required type="text" class="registercity" id="registercity" name="registercity" placeholder="City"/><br/>    
                         </div>
                         <div class="registercountry">
                             <li class="registercountry">Country*</li>
-                            <select>
-                                <option selected="selected">Select</option>
+                            <select required name="registercountry" id="registercountry">
+                                <option selected="selected" value="">Select</option>
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -396,8 +442,8 @@
                         </p>
                         <div class="registercountrycode">
                             <li class="registercountrycode">Country Code*</li>
-                            <select name="countryCode" id="">
-                                <option selected="selected">Country Code</option>
+                            <select required name="registercountrycode" id="registercountrycode">
+                                <option selected="selected" value="">Country Code</option>
                                 <option data-countryCode="PH" value="63">Philippines (+63)</option>
                                 <optgroup label="Other countries">
                                     <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -619,14 +665,14 @@
                         </div>
                         <div class="registerphonenum">
                             <li class="registerphonenum">Phone Number*</li>
-                            <input type="password" class="registerphonenum" id="registerphonenum" name="registerphonenum" placeholder="Phone Number"/><br/>    
+                            <input required type="text" class="registerphonenum" id="registerphonenum" name="registerphonenum" placeholder="Phone Number"/><br/>    
                         </div>       
                     </div>
                     <div class="registerbuttonform">
                         <div class="registerbutton">
                             <input type="submit" class="registerbutton" id="registerbutton" name="registerbutton" value="Register"/>
                         </div>                            
-                    </div>                    
+                    </div>                   
                 </div>
             </form>
         </div>

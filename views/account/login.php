@@ -17,15 +17,15 @@
                 <nav class="mynavbar">
                     <ul>
                         <li class="myreservations"><a href="myreservations.html">My Reservations</a></li>
-                        <li class="login"><a href="account/login.php">LogIn</a></li>
+                        <li class="login"><a href="login.php">LogIn</a></li>
                     </ul>
                 </nav>
                 <nav class="navbar">
                     <ul>
                         <li class="home"><a href="../index.php">Home</a></li>
-                        <li class="accomodations"><a href="accomodations.html">Accomodations</a></li>
-                        <li class="contactus"><a href="contactus.html">Contact Us</a></li>
-                        <li class="aboutus"><a href="aboutus.html">About Us</a></li>
+                        <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                        <li class="contactus"><a href="../contactus.php">Contact Us</a></li>
+                        <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
                     </ul>
                 </nav>
                 <a class="navbarlogo" href="aboutme.html">

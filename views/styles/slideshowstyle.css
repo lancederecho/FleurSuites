@@ -5,6 +5,38 @@ div.slideshow{
     top: 0%;
 }
 
+p.room1text{
+    transition: ease 1s;
+    font-family: "Lucida Console";
+/*     font-style: italic; */
+    opacity: .60;
+    color: #ffffff;
+    font-size: 80px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 28%;
+    left: 26.5%;
+    text-align: center;
+    text-shadow: 0 0 2px  rgba(104, 104, 104, 0.9);
+}
+
+.room1button{
+    color: #ffffff;
+    opacity: .75;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 48%;
+    left: 32%;
+    width: 30%;
+    text-align: center;
+}
+
+a.room1button:hover{
+    opacity: 1;
+    transition: ease .8s;
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;

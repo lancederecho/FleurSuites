@@ -22,8 +22,8 @@
                 </nav>
                 <nav class="navbar">
                     <ul>
-                        <li class="home"><a href="../index.php">Home</a></li>
-                        <li class="accomodations"><a href="accomodations.html">Accomodations</a></li>
+                        <li class="home"><a href="index.php">Home</a></li>
+                        <li class="rooms"><a href="rooms.php">Rooms</a></li>
                         <li class="contactus"><a href="contactus.html">Contact Us</a></li>
                         <li class="aboutus"><a href="aboutus.html">About Us</a></li>
                     </ul>
@@ -37,7 +37,12 @@
         <div class="slideshow">
             <div class="mySlides fade">
                 <img src="images/room1.png" style="width:100%">
-                <div class="text"></div>
+                <div class="room1text">
+                    <p align="center" class="room1text">FLEUR SUITES</p>
+                </div>
+                <div class="room1button">
+                    <a class="room1button" href="rooms.php">Get a Room ></a> 
+                </div>
             </div>
             <div class="mySlides fade">
                 <img src="images/room2.png" style="width:100%">
