@@ -1,3 +1,69 @@
+<?php
+
+    session_start();
+
+    if ($_SESSION) {
+        ?>
+            <html>
+                <header>
+                    <div class="navbar">       
+                        <nav class="mynavbar">
+                            <ul>
+                                <li class="myreservations"><a href="myreservations.php">My Reservations</a></li>
+                                <li class="userprofile"><a href="../controllers/logoutfunction.php">
+                                    <?php
+                                        echo $_SESSION['userfirstname'];
+                                    ?>
+                                </a></li>
+                                <li class="logout"><a href="../controllers/logoutfunction.php">Logout</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar">
+                            <ul>
+                                <li class="home"><a href="index.php">Home</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
+                                <li class="contactus"><a href="contactus.html">Contact Us</a></li>
+                                <li class="aboutus"><a href="aboutus.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                        <a class="navbarlogo" href="aboutme.html">
+                            <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
+                        </a> 
+                    </div>  
+                </header>   
+            </html>
+        <?php
+    } else {
+        ?>
+            <html>
+                <header>
+                    <div class="navbar">       
+                        <nav class="mynavbar">
+                            <ul>
+                                <li class="register"><a href="account/register.php">Register</a></li>
+                                <li class="login"><a href="account/login.php">LogIn</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar">
+                            <ul>
+                                <li class="home"><a href="index.php">Home</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
+                                <li class="contactus"><a href="contactus.html">Contact Us</a></li>
+                                <li class="aboutus"><a href="aboutus.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                        <a class="navbarlogo" href="aboutme.html">
+                            <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
+                        </a> 
+                    </div>  
+                </header>   
+            </html>
+        <?php
+    }
+?>
+
+
+
 <html>
     <head>
         <title>Welcome || Fleur Suites</title>
@@ -11,29 +77,6 @@
     </head>
 
     <body>
-    
-        <header>
-            <div class="navbar">       
-                <nav class="mynavbar">
-                    <ul>
-                        <li class="myreservations"><a href="myreservations.html">My Reservations</a></li>
-                        <li class="login"><a href="account/login.php">LogIn</a></li>
-                    </ul>
-                </nav>
-                <nav class="navbar">
-                    <ul>
-                        <li class="home"><a href="index.php">Home</a></li>
-                        <li class="rooms"><a href="rooms.php">Rooms</a></li>
-                        <li class="contactus"><a href="contactus.html">Contact Us</a></li>
-                        <li class="aboutus"><a href="aboutus.html">About Us</a></li>
-                    </ul>
-                </nav>
-                <a class="navbarlogo" href="aboutme.html">
-                    <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
-                </a> 
-            </div>  
-        </header>   
-
         <div class="slideshow">
             <div class="mySlides fade">
                 <img src="images/room1.png" style="width:100%">

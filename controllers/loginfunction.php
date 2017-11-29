@@ -1,6 +1,7 @@
 <?php include "../../models/Users.php"; ?>
 
 <?php
+    session_start();
 
 	$loginemail = isset($_REQUEST['loginemail'])? $_REQUEST["loginemail"]:NULL;
 	$loginpass = isset($_REQUEST['loginpass'])? $_REQUEST["loginpass"]:NULL;
@@ -18,12 +19,23 @@
 			$pass = $values['userpassword'];
 			if($email == $loginemail && $pass == $loginpass){
                 $loggedin = true;
+
+                //Sessions   
+                if ($_POST && !empty($_POST['loginemail'])){
+                    $_SESSION['loginemail'] = $_POST['loginemail'];
+                }
+                if ($_POST && !empty($_POST['loginpass'])){
+                    $_SESSION['loginpass'] = $_POST['loginpass'];
+                }
+                if (!empty($values['userfirstname'])){
+                    $_SESSION['userfirstname'] = $values['userfirstname'];
+                }
+
                 echo "
                 <script>
 				    window.location.href=\"../index.php?select=yes\";
-			 	</script>";
-
-            }
+                </script>";
+            }    
         }
         
         if($loggedin == false) {

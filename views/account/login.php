@@ -18,7 +18,7 @@
             <div class="navbar">       
                 <nav class="mynavbar">
                     <ul>
-                        <li class="myreservations"><a href="myreservations.html">My Reservations</a></li>
+                        <li class="register"><a href="register.php">Register</a></li>
                         <li class="login"><a href="login.php">LogIn</a></li>
                     </ul>
                 </nav>
