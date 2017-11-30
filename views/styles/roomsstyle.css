@@ -6,7 +6,7 @@ body{
 
 div.backgroundrooms{
     bottom: 22%;
-    position: absolute;
+    position: fixed;
 }
 
 div.roomsstatement{

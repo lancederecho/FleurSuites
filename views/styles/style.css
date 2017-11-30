@@ -4,11 +4,202 @@ body{
     margin: 0;
 }
 
+div.footer{
+    top: 300%;
+    height: 30%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+}
+
+div.footercontent{
+    top: 0%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    border-top: solid 1px rgb(199, 199, 199);
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+}
+
+div.background{
+    max-width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0%;
+}
+
+.videobackground{
+    position: fixed;
+    width: 100%;
+}
+
+div.backgroundtext{
+    margin-top: 50%;
+    margin-left: 55.5%;
+    width: 100%;
+    height: 30%;
+}
+
+p.backgroundtext{
+    transition: ease 1s;
+    font-family: "Lucida Console";
+    opacity: .65;
+    color: #ffffff;
+    font-size: 85px;
+    padding: 8px 12px;
+    top: 28%;
+    left: 26.5%;
+    text-shadow: 0 0 2px  rgba(104, 104, 104, 0.9);
+}
+
+div.backgroundbutton{
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 77%;
+    width: 50%;
+    height: 10%;
+}
+
+a.backgroundbutton{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .80;
+    font-size: 15px;
+    width: 30%;
+    border: 0px solid white;
+}
+
+a.backgroundbutton:hover{
+    padding: 8px;
+    border: .5px solid white;
+    opacity: 1;
+    transition: ease .8s;
+}
+
 div.homebody{
     width: 100%;
-    height: 100%;
-    background: rgb(240, 240, 240);
-    top: 105%;
+    height: 200%;
+    background: rgb(255, 255, 255);
+    top: 100%;
     box-shadow: 0 0 4px  rgb(0, 0, 0);
-    position: relative;
+    position: absolute;
+}
+
+div.homerooms{
+    top: 0%;
+    width: 100%;
+    height: 32%;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+    position: absolute;
+}
+
+img.homerooms{
+    height: 100%;
+    position: absolute;
+}
+
+div.homeroomsbutton{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    width: 20%;
+    height: 15%;
+}
+
+a.homeroomsbutton{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .70;
+    font-size: 70px;
+    width: 30%;
+    border: 0px solid white;
+}
+
+a.homeroomsbutton:hover{
+    padding: 8px;
+    border: .5px solid white;
+    opacity: 1;
+    transition: ease .8s;
+}
+
+div.homeaboutus{
+    top: 32%;
+    width: 100%;
+    height: 32%;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+    position: absolute;
+}
+
+img.homeaboutus{
+    height: 100%;
+    position: absolute;
+}
+
+div.homeaboutusbutton{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    width: 30%;
+    height: 15%;
+}
+
+a.homeaboutusbutton{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .70;
+    font-size: 70px;
+    width: 30%;
+    border: 0px solid white;
+}
+
+a.homeaboutusbutton:hover{
+    padding: 8px;
+    border: .5px solid white;
+    opacity: 1;
+    transition: ease .8s;
+}
+
+
+div.homecontactus{
+    top: 64%;
+    width: 100%;
+    height: 32%;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+    position: absolute;
+}
+
+img.homecontactus{
+    height: 100%;
+    position: absolute;
+}
+
+div.homecontactusbutton{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    width: 30%;
+    height: 15%;
+}
+
+a.homecontactusbutton{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .70;
+    font-size: 70px;
+    width: 30%;
+    border: 0px solid white;
+}
+
+a.homecontactusbutton:hover{
+    padding: 8px;
+    border: .5px solid white;
+    opacity: 1;
+    transition: ease .8s;
 }

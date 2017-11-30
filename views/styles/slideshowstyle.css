@@ -8,7 +8,6 @@ div.slideshow{
 p.room1text{
     transition: ease 1s;
     font-family: "Lucida Console";
-/*     font-style: italic; */
     opacity: .60;
     color: #ffffff;
     font-size: 80px;

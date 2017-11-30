@@ -4,7 +4,7 @@ $(document).ready(function() {
     	$('div.navbar').addClass('shrink');
     }
     else {
-    $('div.navbar').removeClass('shrink');
+      $('div.navbar').removeClass('shrink');
     }
   });
 });

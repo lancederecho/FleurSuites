@@ -69,15 +69,27 @@
         <title>Welcome || Fleur Suites</title>
         <script src="js/jquery.js"></script>
         <script src="js/navscroll.js"></script>
-        <script src="js/homeSlideshow.js"></script>
+<!--         <script src="js/homeSlideshow.js"></script> -->
         <link rel="shortcut icon" href="images/title.ico">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/navbarstyle.css">
-        <link rel="stylesheet" type="text/css" href="styles/slideshowstyle.css">
+        <link rel="stylesheet" type="text/css" href="styles/footerstyle.css">
+<!--         <link rel="stylesheet" type="text/css" href="styles/slideshowstyle.css"> -->
     </head>
 
     <body>
-        <div class="slideshow">
+        <div class="background">
+            <video autoplay loop class="videobackground">
+                <source src="videos/FleurHomeBackground.mp4" type="video/mp4">
+            </video>
+            <div class="backgroundtext">
+                <p class="backgroundtext">FLEUR SUITES</p>
+            </div>
+            <div align="center" class="backgroundbutton">
+                <a class="backgroundbutton" href="rooms.php">Get a Room ></a> 
+            </div>
+        </div>
+ <!--        <div class="slideshow">
             <div class="mySlides fade">
                 <img src="images/room1.png" style="width:100%">
                 <div class="room1text">
@@ -123,12 +135,42 @@
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
-        </script>    
+        </script>     -->
 
         <div class="homebody">
-        
+            <div class="homerooms">
+                <img class=homerooms src="images/room1.png" style="width:100%"> 
+                <div align="center" class="homeroomsbutton">
+                    <a href="rooms.php" class="homeroomsbutton">Rooms</a>
+                </div>   
+            </div>
+
+            <div class="homeaboutus">
+                <img class=homeaboutus src="images/room2.png" style="width:100%">
+                <div align="center" class="homeaboutusbutton">
+                    <a href="rooms.php" class="homeaboutusbutton">About Us</a>
+                </div>  
+            </div>
+            
+            <div class="homecontactus">
+                <img class=homecontactus src="images/room4.png" style="width:100%">
+                <div align="center" class="homecontactusbutton">
+                    <a href="rooms.php" class="homecontactusbutton">Contact Us</a>
+                </div>  
+            </div>
+            
         </div>
 
+        <footer>
+            <div align="center" class="footer">
+                <div class="footercontent">
+                    FOOTER
+                </div>
+                
+            </div>
+        </footer>
     </body>
+
+
 
 </html>
