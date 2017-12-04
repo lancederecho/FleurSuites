@@ -5,6 +5,19 @@ div.slideshow{
     top: 0%;
 }
 
+div.slideshow div img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: black;
+}
+
+div.slideshow div img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 p.room1text{
     transition: ease 1s;
     font-family: "Lucida Console";
@@ -39,19 +52,19 @@ a.room1button:hover{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 43%;
     padding-top: 4px;
     padding-left: 4px;
     padding-right: 9px;
     padding-bottom: 9px;
     color: white;
-    font-size: 26;
-    opacity: .4;
+    font-size: 35;
+    opacity: .7;
     transition: 0.6s ease;
-    border: 2px solid white; 
-    border-radius: 100px;
-    height: 30px;
-    width: 30px;
+/*     border: 2px solid white; 
+    border-radius: 100px; */
+    height: 20px;
+    width: 20px;
 }
 
 .prev {
@@ -63,7 +76,6 @@ a.room1button:hover{
 }
 
 .prev:hover, .next:hover {
-    box-shadow: 0 0 3px  rgba(255, 255, 255, 0.6);
     opacity: 1;
 }
 

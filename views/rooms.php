@@ -2,9 +2,10 @@
 
     session_start();
 
-    if ($_SESSION) {
+    if ($_SESSION && isset($_SESSION['userfirstname'])) {
         ?>
             <html>
+                <link rel="shortcut icon" href="images/title.ico">
                 <header>
                     <div class="navbar">       
                         <nav class="mynavbar">
@@ -36,6 +37,7 @@
     } else {
         ?>
             <html>
+                <link rel="shortcut icon" href="images/title.ico">
                 <header>
                     <div class="navbar">       
                         <nav class="mynavbar">
@@ -67,11 +69,9 @@
         <title>Rooms || Fleur Suites</title>
         <script src="js/jquery.js"></script>
         <script src="js/navscroll.js"></script>
-        <script src="js/homeSlideshow.js"></script>
         <link rel="shortcut icon" href="images/title.ico">
         <link rel="stylesheet" type="text/css" href="styles/roomsstyle.css">
         <link rel="stylesheet" type="text/css" href="styles/navbarstyle.css">
-        <link rel="stylesheet" type="text/css" href="styles/slideshowstyle.css">
     </head>
 
     <body>
@@ -110,7 +110,7 @@
                         </p>
                     </div>
                     <div align="center" class="juniorsuitemoreinfobutton">
-                        <a href="register.php" class="juniorsuitemoreinfobutton">More Info</a>
+                        <a href="rooms/juniorsuite.php" class="juniorsuitemoreinfobutton">More Info</a>
                     </div>                    
                 </div>
             </div>
@@ -136,7 +136,7 @@
                         </p>
                     </div>
                     <div align="center" class="standardroommoreinfobutton">
-                        <a href="register.php" class="standardroommoreinfobutton">More Info</a>
+                        <a href="rooms/standardroom.php" class="standardroommoreinfobutton">More Info</a>
                     </div>                    
                 </div>
             </div>
@@ -162,7 +162,7 @@
                         </p>
                     </div>
                     <div align="center" class="superiorroommoreinfobutton">
-                        <a href="register.php" class="superiorroommoreinfobutton">More Info</a>
+                        <a href="rooms/superiorroom.php" class="superiorroommoreinfobutton">More Info</a>
                     </div>                    
                 </div>
             </div>

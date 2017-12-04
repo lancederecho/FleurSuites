@@ -2,9 +2,10 @@
 
     session_start();
 
-    if ($_SESSION) {
+    if ($_SESSION && isset($_SESSION['userfirstname'])) {
         ?>
             <html>
+                <link rel="shortcut icon" href="images/title.ico">
                 <header>
                     <div class="navbar">       
                         <nav class="mynavbar">
@@ -36,6 +37,7 @@
     } else {
         ?>
             <html>
+                <link rel="shortcut icon" href="images/title.ico">
                 <header>
                     <div class="navbar">       
                         <nav class="mynavbar">
@@ -69,7 +71,7 @@
         <title>Welcome || Fleur Suites</title>
         <script src="js/jquery.js"></script>
         <script src="js/navscroll.js"></script>
-<!--         <script src="js/homeSlideshow.js"></script> -->
+<!--         <script src="js/slideshow.js"></script> -->
         <link rel="shortcut icon" href="images/title.ico">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/navbarstyle.css">

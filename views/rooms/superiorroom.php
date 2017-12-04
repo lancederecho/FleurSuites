@@ -71,7 +71,7 @@
         <script src="../js/navscroll.js"></script>
         <script src="../js/slideshow.js"></script>
         <link rel="shortcut icon" href="images/title.ico">
-        <link rel="stylesheet" type="text/css" href="../styles/juniorsuitestyle.css">
+        <link rel="stylesheet" type="text/css" href="../styles/superiorroomstyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/navbarstyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/slideshowstyle.css">
     </head>
@@ -81,60 +81,60 @@
             <img src="../images/room1.png" style="width:100%">
         </div>
 
-        <div class="juniorsuitestatement">
-            <p align="center" class="juniorsuitestatement">JUNIOR SUITE</p>
+        <div class="superiorroomstatement">
+            <p align="center" class="superiorroomstatement">SUPERIOR ROOM</p>
         </div>
 
-        <div class="juniorsuitebody">
-            <div class="juniorsuitemorebody">
+        <div class="superiorroombody">
+            <div class="superiorroommorebody">
                 <div class="roomsback">
                     <a href="../rooms.php">
                         <img class="roomsback" src="../images/icons/back.ico"/>
                     </a>
                 </div>
-                <div class="juniorsuitemorebodystatement">
-                    <p class="juniorsuitemorebodystatement">
-                        Junior Suites
+                <div class="superiorroommorebodystatement">
+                    <p class="superiorroommorebodystatement">
+                        Superior Room
                     </p>
                 </div>
-                <div class="juniorsuitemore">
-                    <div class="juniorsuitemoreimages">
+                <div class="superiorroommore">
+                    <div class="superiorroommoreimages">
                         <div class="slideshow">
                             <div class="mySlides fade">
-                                <img src="../images/juniorsuiteimages/big1.jpg">
+                                <img src="../images/superiorroomimages/big1.jpg">
                             </div>
                             <div class="mySlides fade">
-                                <img src="../images/juniorsuiteimages/big2.jpg">
+                                <img src="../images/superiorroomimages/big2.jpg">
                             </div>
                             <div class="mySlides fade">
-                                <img src="../images/juniorsuiteimages/big3.jpg">
+                                <img src="../images/superiorroomimages/big3.jpg">
                             </div>
                             <div class="mySlides fade">
-                                <img src="../images/juniorsuiteimages/big4.jpg">
+                                <img src="../images/superiorroomimages/big4.jpg">
                             </div>
                             <div class="mySlides fade">
-                                <img src="../images/juniorsuiteimages/big5.jpg">
+                                <img src="../images/superiorroomimages/big5.jpg">
                             </div>
 
                             <a class="prev" align="center" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" align="center" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                        <div class="juniorsuitesimages">
-                            <ul class="juniorsuitesimage">
-                                <a class="juniorsuitesimage1" onclick="selectSlides(1)">
-                                    <img class src="../images/juniorsuiteimages/1.jpg">
+                        <div class="superiorroomsimages">
+                            <ul class="superiorroomsimage">
+                                <a class="superiorroomsimage1" onclick="selectSlides(1)">
+                                    <img class src="../images/superiorroomimages/1.jpg">
                                 </a>
-                                <a class="juniorsuitesimage2" onclick="selectSlides(2)">
-                                    <img class src="../images/juniorsuiteimages/2.jpg">
+                                <a class="superiorroomsimage2" onclick="selectSlides(2)">
+                                    <img class src="../images/superiorroomimages/2.jpg">
                                 </a>
-                                <a class="juniorsuitesimage3" onclick="selectSlides(3)">
-                                    <img class src="../images/juniorsuiteimages/3.jpg">
+                                <a class="superiorroomsimage3" onclick="selectSlides(3)">
+                                    <img class src="../images/superiorroomimages/3.jpg">
                                 </a>
-                                <a class="juniorsuitesimage4" onclick="selectSlides(4)">
-                                    <img class src="../images/juniorsuiteimages/4.jpg">
+                                <a class="superiorroomsimage4" onclick="selectSlides(4)">
+                                    <img class src="../images/superiorroomimages/4.jpg">
                                 </a>
-                                <a class="juniorsuitesimage5" onclick="selectSlides(5)">
-                                    <img class src="../images/juniorsuiteimages/5.jpg">
+                                <a class="superiorroomsimage5" onclick="selectSlides(5)">
+                                    <img class src="../images/superiorroomimages/5.jpg">
                                 </a>
                             </ul>
                         </div>
@@ -143,36 +143,36 @@
                             showSlides(slideIndex);
                         </script>
                     </div>
-                    <div class="juniorsuitemoreproperties">
-                        <div class="juniorsuitemorepropertiesstatement">
-                            <p class="juniorsuitemorepropertiesstatement">
+                    <div class="superiorroommoreproperties">
+                        <div class="superiorroommorepropertiesstatement">
+                            <p class="superiorroommorepropertiesstatement">
                                 Properties: 
                             </p>                            
                         </div>
                     </div>   
-                    <div class="juniorsuitemoreinfo">
-                        <div class="juniorsuitemoreinfostatement">
-                            <p class="juniorsuitemoreinfostatement">
+                    <div class="superiorroommoreinfo">
+                        <div class="superiorroommoreinfostatement">
+                            <p class="superiorroommoreinfostatement">
                                 More Info: 
                             </p>                            
                         </div>                        
                     </div>   
-                    <div class="juniorsuitemoreamenities">
-                        <div class="juniorsuitemoreamenitiesstatement">
-                            <p class="juniorsuitemoreamenitiesstatement">
+                    <div class="superiorroommoreamenities">
+                        <div class="superiorroommoreamenitiesstatement">
+                            <p class="superiorroommoreamenitiesstatement">
                                 Amenities: 
                             </p>                            
                         </div>
                     </div>
-                    <div class="juniorsuitemoreterms">
-                        <div class="juniorsuitemoretermsstatement">
-                            <p class="juniorsuitemoretermsstatement">
+                    <div class="superiorroommoreterms">
+                        <div class="superiorroommoretermsstatement">
+                            <p class="superiorroommoretermsstatement">
                                 Terms: 
                             </p>                            
                         </div>                       
                     </div>  
                 </div>
-                <div class="juniorsuitecheckinout">
+                <div class="superiorroomcheckinout">
                     
                 </div>
             </div>

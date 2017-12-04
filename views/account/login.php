@@ -5,11 +5,9 @@
         <title>LogIn || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
-        <script src="../js/homeSlideshow.js"></script>
         <link rel="shortcut icon" href="../images/title.ico">
         <link rel="stylesheet" type="text/css" href="../styles/loginstyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/navbarstyle.css">
-        <link rel="stylesheet" type="text/css" href="../styles/slideshowstyle.css">
     </head>
 
     <body>
