@@ -127,6 +127,7 @@ div.juniorsuitesimages{
     top: 83%;
 }
 
+/* /////////////////////////////Properties///////////////////////////////// */
 div.juniorsuitemoreproperties{
     left: 5%;
     top: 41%;
@@ -137,7 +138,8 @@ div.juniorsuitemoreproperties{
 }
 
 div.juniorsuitemorepropertiesstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 5%;
     height: 20%;
     width: 20%;
 }
@@ -145,22 +147,72 @@ div.juniorsuitemorepropertiesstatement{
 p.juniorsuitemorepropertiesstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+/* Acommodates */
+div.juniorsuitemoreaccommodates{
+    position: absolute;
+    top: 5%;
+    left: 23%;
+    height: 20%;
+    width: 30%;
+}
+
+p.juniorsuitemoreaccommodates{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Beds */
+div.juniorsuitemorebeds{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    height: 20%;
+    width: 30%;
+}
+
+p.juniorsuitemorebeds{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Size */
+div.juniorsuitemoresize{
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    height: 20%;
+    width: 30%;
+}
+
+p.juniorsuitemoresize{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////More Info///////////////////////////////// */
 div.juniorsuitemoreinfo{
     left: 5%;
     top: 51%;
-    height: 18%;
+    height: 15%;
     width: 90%;
     border-bottom: solid 1px rgb(199, 199, 199);
     position: absolute;
 }
 
 div.juniorsuitemoreinfostatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 15%;
     height: 20%;
     width: 20%;
 }
@@ -168,22 +220,39 @@ div.juniorsuitemoreinfostatement{
 p.juniorsuitemoreinfostatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+div.juniorsuitemoremoreinfo{
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    height: 70%;
+    width: 70%;
+}
+
+p.juniorsuitemoremoreinfo{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////Amenities///////////////////////////////// */
 div.juniorsuitemoreamenities{
     left: 5%;
-    top: 69%;
-    height: 20%;
+    top: 66%;
+    height: 23%;
     width: 90%;
     border-bottom: solid 1px rgb(199, 199, 199);
     position: absolute;
 }
 
 div.juniorsuitemoreamenitiesstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 15%;
     height: 20%;
     width: 20%;
 }
@@ -191,11 +260,212 @@ div.juniorsuitemoreamenitiesstatement{
 p.juniorsuitemoreamenitiesstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+/* AC */
+div.juniorsuitemoreamenitiesacimg{
+    position: absolute;
+    left: 23%;
+    top: 17%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitiesactitle{
+    position: absolute;
+    left: 31%;
+    top: 17%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitiesactitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* TV */
+div.juniorsuitemoreamenitiestvimg{
+    position: absolute;
+    left: 23%;
+    top: 35%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitiestvtitle{
+    position: absolute;
+    left: 31%;
+    top: 35%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitiestvtitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Minibar */
+div.juniorsuitemoreamenitiesminibarimg{
+    position: absolute;
+    left: 23%;
+    top: 53%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitiesminibartitle{
+    position: absolute;
+    left: 31%;
+    top: 53%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitiesminibartitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Kitchen */
+div.juniorsuitemoreamenitieskitchenimg{
+    position: absolute;
+    left: 23%;
+    top: 71%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitieskitchentitle{
+    position: absolute;
+    left: 31%;
+    top: 71%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitieskitchentitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Wifi */
+div.juniorsuitemoreamenitieswifiimg{
+    position: absolute;
+    left: 63%;
+    top: 17%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitieswifititle{
+    position: absolute;
+    left: 71%;
+    top: 17%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitieswifititle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Safe */
+div.juniorsuitemoreamenitiessafeimg{
+    position: absolute;
+    left: 63%;
+    top: 35%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitiessafetitle{
+    position: absolute;
+    left: 71%;
+    top: 35%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitiessafetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Telephone */
+div.juniorsuitemoreamenitiestelephoneimg{
+    position: absolute;
+    left: 63%;
+    top: 53%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitiestelephonetitle{
+    position: absolute;
+    left: 71%;
+    top: 53%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitiestelephonetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Towels */
+div.juniorsuitemoreamenitiestowelsimg{
+    position: absolute;
+    left: 63%;
+    top: 71%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.juniorsuitemoreamenitiestowelstitle{
+    position: absolute;
+    left: 71%;
+    top: 71%;
+    height: 13%;
+    width: 10%;
+}
+
+p.juniorsuitemoreamenitiestowelstitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////Terms///////////////////////////////// */
 div.juniorsuitemoreterms{
     left: 5%;
     top: 89%;
@@ -205,7 +475,8 @@ div.juniorsuitemoreterms{
 }
 
 div.juniorsuitemoretermsstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 20%;
     height: 20%;
     width: 20%;
 }
@@ -213,9 +484,28 @@ div.juniorsuitemoretermsstatement{
 p.juniorsuitemoretermsstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
+}
+
+div.juniorsuitemoretermstitle{
+    position: absolute;
+    left: 22%;
+    top: 31.5%;
+    height: 20%;
+    width: 40%;
+}
+
+a.juniorsuitemoretermstitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+a.juniorsuitemoretermstitle:hover{
+    opacity: 1;
 }
 
 

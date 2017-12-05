@@ -27,7 +27,7 @@
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="../aboutme.html">
+                        <a class="navbarlogo" href="../index.php">
                             <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -54,7 +54,7 @@
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="../aboutme.html">
+                        <a class="navbarlogo" href="../index.php">
                             <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -149,13 +149,37 @@
                                 Properties: 
                             </p>                            
                         </div>
+                        <div class="superiorroommoreaccommodates">
+                            <p class="superiorroommoreaccommodates">
+                                Accommodates: 2 
+                            </p>
+                        </div>
+                        <div class="superiorroommoresize">
+                            <p class="superiorroommoresize">
+                                Size: 280 sq ft
+                            </p>
+                        </div>
+                        <div class="superiorroommorebeds">
+                            <p class="superiorroommorebeds">
+                                Beds: 1 King(s)
+                            </p>
+                        </div>
                     </div>   
                     <div class="superiorroommoreinfo">
                         <div class="superiorroommoreinfostatement">
                             <p class="superiorroommoreinfostatement">
                                 More Info: 
                             </p>                            
-                        </div>                        
+                        </div>   
+                        <div class="superiorroommoremoreinfo">
+                            <p class="superiorroommoremoreinfo">
+                                Elegant simplicity. Our Superior Rooms give you the space and privacy 
+                                you need to work or play on the road. The spacious 380 square foot rooms 
+                                include an intimate lounge area, business workstation and views of 
+                                the courtyard. Complete with all the regular amenities, our Superior Rooms 
+                                also include a daily newspaper and water bottles.
+                            </p>
+                        </div>                           
                     </div>   
                     <div class="superiorroommoreamenities">
                         <div class="superiorroommoreamenitiesstatement">
@@ -163,13 +187,118 @@
                                 Amenities: 
                             </p>                            
                         </div>
+                        <div class="superiorroommoreamenitiesac">
+                            <div class="superiorroommoreamenitiesacimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiesactitle">
+                                <p class="superiorroommoreamenitiesactitle">
+                                    A/C
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiestv">
+                            <div class="superiorroommoreamenitiestvimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiestvtitle">
+                                <p class="superiorroommoreamenitiestvtitle">
+                                    TV
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiesminibar">
+                            <div class="superiorroommoreamenitiesminibarimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiesminibartitle">
+                                <p class="superiorroommoreamenitiesminibartitle">
+                                    Minibar
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitieskitchen">
+                            <div class="superiorroommoreamenitieskitchenimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitieskitchentitle">
+                                <p class="superiorroommoreamenitieskitchentitle">
+                                    Kitchen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitieswifi">
+                            <div class="superiorroommoreamenitieswifiimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitieswifititle">
+                                <p class="superiorroommoreamenitieswifititle">
+                                    Wifi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiessafe">
+                            <div class="superiorroommoreamenitiessafeimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiessafetitle">
+                                <p class="superiorroommoreamenitiessafetitle">
+                                    Safe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiestelephone">
+                            <div class="superiorroommoreamenitiestelephoneimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiestelephonetitle">
+                                <p class="superiorroommoreamenitiestelephonetitle">
+                                    Telephone
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiesbath">
+                            <div class="superiorroommoreamenitiesbathimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiesbathtitle">
+                                <p class="superiorroommoreamenitiesbathtitle">
+                                    Bath
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiesshower">
+                            <div class="superiorroommoreamenitiesshowerimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiesshowertitle">
+                                <p class="superiorroommoreamenitiesshowertitle">
+                                    Shower
+                                </p>
+                            </div>
+                        </div>
+                        <div class="superiorroommoreamenitiesworkspace">
+                            <div class="superiorroommoreamenitiesworkspaceimg">
+                                <!-- <img src="../images/superiorroomimages/5.jpg"> -->
+                            </div>
+                            <div class="superiorroommoreamenitiesworkspacetitle">
+                                <p class="superiorroommoreamenitiesworkspacetitle">
+                                    Workspace
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="superiorroommoreterms">
                         <div class="superiorroommoretermsstatement">
                             <p class="superiorroommoretermsstatement">
                                 Terms: 
                             </p>                            
-                        </div>                       
+                        </div>  
+                        <div class="superiorroommoretermstitle">
+                            <a href="" class="superiorroommoretermstitle">
+                                Read Our Policies
+                            </a>
+                        </div>                      
                     </div>  
                 </div>
                 <div class="superiorroomcheckinout">

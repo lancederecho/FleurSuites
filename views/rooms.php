@@ -27,7 +27,7 @@
                                 <li class="aboutus"><a href="aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="aboutme.html">
+                        <a class="navbarlogo" href="index.php">
                             <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -54,7 +54,7 @@
                                 <li class="aboutus"><a href="aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="aboutme.html">
+                        <a class="navbarlogo" href="index.php">
                             <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -106,7 +106,7 @@
                     </div>                                         
                     <div class="juniorsuiteprice">
                         <p align="left" class="juniorsuiteprice">
-                            ₱2,000.00
+                            ₱3,000.00
                         </p>
                     </div>
                     <div align="center" class="juniorsuitemoreinfobutton">
@@ -132,7 +132,7 @@
                     </div>                                         
                     <div class="standardroomprice">
                         <p align="left" class="standardroomprice">
-                            ₱3,000.00
+                            ₱2,000.00
                         </p>
                     </div>
                     <div align="center" class="standardroommoreinfobutton">

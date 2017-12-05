@@ -127,6 +127,7 @@ div.superiorroomsimages{
     top: 83%;
 }
 
+/* /////////////////////////////Properties///////////////////////////////// */
 div.superiorroommoreproperties{
     left: 5%;
     top: 41%;
@@ -137,7 +138,8 @@ div.superiorroommoreproperties{
 }
 
 div.superiorroommorepropertiesstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 5%;
     height: 20%;
     width: 20%;
 }
@@ -145,22 +147,72 @@ div.superiorroommorepropertiesstatement{
 p.superiorroommorepropertiesstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+/* Acommodates */
+div.superiorroommoreaccommodates{
+    position: absolute;
+    top: 5%;
+    left: 23%;
+    height: 20%;
+    width: 30%;
+}
+
+p.superiorroommoreaccommodates{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Beds */
+div.superiorroommorebeds{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    height: 20%;
+    width: 30%;
+}
+
+p.superiorroommorebeds{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Size */
+div.superiorroommoresize{
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    height: 20%;
+    width: 30%;
+}
+
+p.superiorroommoresize{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////More Info///////////////////////////////// */
 div.superiorroommoreinfo{
     left: 5%;
     top: 51%;
-    height: 18%;
+    height: 15%;
     width: 90%;
     border-bottom: solid 1px rgb(199, 199, 199);
     position: absolute;
 }
 
 div.superiorroommoreinfostatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 15%;
     height: 20%;
     width: 20%;
 }
@@ -168,22 +220,39 @@ div.superiorroommoreinfostatement{
 p.superiorroommoreinfostatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+div.superiorroommoremoreinfo{
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    height: 70%;
+    width: 70%;
+}
+
+p.superiorroommoremoreinfo{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////Amenities///////////////////////////////// */
 div.superiorroommoreamenities{
     left: 5%;
-    top: 69%;
-    height: 20%;
+    top: 66%;
+    height: 26%;
     width: 90%;
     border-bottom: solid 1px rgb(199, 199, 199);
     position: absolute;
 }
 
 div.superiorroommoreamenitiesstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 10%;
     height: 20%;
     width: 20%;
 }
@@ -191,21 +260,274 @@ div.superiorroommoreamenitiesstatement{
 p.superiorroommoreamenitiesstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+
+/* AC */
+div.superiorroommoreamenitiesacimg{
+    position: absolute;
+    left: 23%;
+    top: 12%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiesactitle{
+    position: absolute;
+    left: 31%;
+    top: 12%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiesactitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* TV */
+div.superiorroommoreamenitiestvimg{
+    position: absolute;
+    left: 23%;
+    top: 27%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiestvtitle{
+    position: absolute;
+    left: 31%;
+    top: 27%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiestvtitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Minibar */
+div.superiorroommoreamenitiesminibarimg{
+    position: absolute;
+    left: 23%;
+    top: 42%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiesminibartitle{
+    position: absolute;
+    left: 31%;
+    top: 42%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiesminibartitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Telephone */
+div.superiorroommoreamenitiestelephoneimg{
+    position: absolute;
+    left: 23%;
+    top: 57%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiestelephonetitle{
+    position: absolute;
+    left: 31%;
+    top: 57%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiestelephonetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Kitchen */
+div.superiorroommoreamenitieskitchenimg{
+    position: absolute;
+    left: 23%;
+    top: 72%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitieskitchentitle{
+    position: absolute;
+    left: 31%;
+    top: 72%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitieskitchentitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Wifi */
+div.superiorroommoreamenitieswifiimg{
+    position: absolute;
+    left: 63%;
+    top: 12%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitieswifititle{
+    position: absolute;
+    left: 71%;
+    top: 12%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitieswifititle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Safe */
+div.superiorroommoreamenitiessafeimg{
+    position: absolute;
+    left: 63%;
+    top: 27%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiessafetitle{
+    position: absolute;
+    left: 71%;
+    top: 27%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiessafetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Shower */
+div.superiorroommoreamenitiesshowerimg{
+    position: absolute;
+    left: 63%;
+    top: 42%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiesshowertitle{
+    position: absolute;
+    left: 71%;
+    top: 42%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiesshowertitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Bath */
+div.superiorroommoreamenitiesbathimg{
+    position: absolute;
+    left: 63%;
+    top: 57%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiesbathtitle{
+    position: absolute;
+    left: 71%;
+    top: 57%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiesbathtitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Workspace */
+div.superiorroommoreamenitiesworkspaceimg{
+    position: absolute;
+    left: 63%;
+    top: 72%;
+    height: 10%;
+    width: 7%;
+    background: grey;
+}
+
+div.superiorroommoreamenitiesworkspacetitle{
+    position: absolute;
+    left: 71%;
+    top: 72%;
+    height: 10%;
+    width: 10%;
+}
+
+p.superiorroommoreamenitiesworkspacetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////Terms///////////////////////////////// */
 div.superiorroommoreterms{
     left: 5%;
-    top: 89%;
-    height: 11%;
+    top: 92%;
+    height: 8%;
     width: 90%;
     position: absolute;
 }
 
 div.superiorroommoretermsstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 20%;
     height: 20%;
     width: 20%;
 }
@@ -213,10 +535,26 @@ div.superiorroommoretermsstatement{
 p.superiorroommoretermsstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+div.superiorroommoretermstitle{
+    position: absolute;
+    left: 22%;
+    top: 31.5%;
+    height: 20%;
+    width: 40%;
+}
 
+a.superiorroommoretermstitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
 
+a.superiorroommoretermstitle:hover{
+    opacity: 1;
+}

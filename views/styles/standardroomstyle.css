@@ -127,6 +127,7 @@ div.standardroomsimages{
     top: 83%;
 }
 
+/* /////////////////////////////Properties///////////////////////////////// */
 div.standardroommoreproperties{
     left: 5%;
     top: 41%;
@@ -137,7 +138,8 @@ div.standardroommoreproperties{
 }
 
 div.standardroommorepropertiesstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 5%;
     height: 20%;
     width: 20%;
 }
@@ -145,22 +147,72 @@ div.standardroommorepropertiesstatement{
 p.standardroommorepropertiesstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+/* Acommodates */
+div.standardroommoreaccommodates{
+    position: absolute;
+    top: 5%;
+    left: 23%;
+    height: 20%;
+    width: 30%;
+}
+
+p.standardroommoreaccommodates{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Beds */
+div.standardroommorebeds{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    height: 20%;
+    width: 30%;
+}
+
+p.standardroommorebeds{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Size */
+div.standardroommoresize{
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    height: 20%;
+    width: 30%;
+}
+
+p.standardroommoresize{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////More Info///////////////////////////////// */
 div.standardroommoreinfo{
     left: 5%;
     top: 51%;
-    height: 18%;
+    height: 15%;
     width: 90%;
     border-bottom: solid 1px rgb(199, 199, 199);
     position: absolute;
 }
 
 div.standardroommoreinfostatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 15%;
     height: 20%;
     width: 20%;
 }
@@ -168,22 +220,39 @@ div.standardroommoreinfostatement{
 p.standardroommoreinfostatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+div.standardroommoremoreinfo{
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    height: 70%;
+    width: 70%;
+}
+
+p.standardroommoremoreinfo{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* /////////////////////////////Amenities///////////////////////////////// */
 div.standardroommoreamenities{
     left: 5%;
-    top: 69%;
-    height: 20%;
+    top: 66%;
+    height: 23%;
     width: 90%;
     border-bottom: solid 1px rgb(199, 199, 199);
     position: absolute;
 }
 
 div.standardroommoreamenitiesstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 15%;
     height: 20%;
     width: 20%;
 }
@@ -191,11 +260,189 @@ div.standardroommoreamenitiesstatement{
 p.standardroommoreamenitiesstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+
+/* AC */
+div.standardroommoreamenitiesacimg{
+    position: absolute;
+    left: 23%;
+    top: 17%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitiesactitle{
+    position: absolute;
+    left: 31%;
+    top: 17%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitiesactitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* TV */
+div.standardroommoreamenitiestvimg{
+    position: absolute;
+    left: 23%;
+    top: 35%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitiestvtitle{
+    position: absolute;
+    left: 31%;
+    top: 35%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitiestvtitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Minibar */
+div.standardroommoreamenitiesminibarimg{
+    position: absolute;
+    left: 23%;
+    top: 53%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitiesminibartitle{
+    position: absolute;
+    left: 31%;
+    top: 53%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitiesminibartitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Kitchen */
+div.standardroommoreamenitieskitchenimg{
+    position: absolute;
+    left: 23%;
+    top: 71%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitieskitchentitle{
+    position: absolute;
+    left: 31%;
+    top: 71%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitieskitchentitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Wifi */
+div.standardroommoreamenitieswifiimg{
+    position: absolute;
+    left: 63%;
+    top: 17%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitieswifititle{
+    position: absolute;
+    left: 71%;
+    top: 17%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitieswifititle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Safe */
+div.standardroommoreamenitiessafeimg{
+    position: absolute;
+    left: 63%;
+    top: 35%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitiessafetitle{
+    position: absolute;
+    left: 71%;
+    top: 35%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitiessafetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+/* Telephone */
+div.standardroommoreamenitiestelephoneimg{
+    position: absolute;
+    left: 63%;
+    top: 53%;
+    height: 13%;
+    width: 7%;
+    background: grey;
+}
+
+div.standardroommoreamenitiestelephonetitle{
+    position: absolute;
+    left: 71%;
+    top: 53%;
+    height: 13%;
+    width: 10%;
+}
+
+p.standardroommoreamenitiestelephonetitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+
+/* /////////////////////////////Terms///////////////////////////////// */
 div.standardroommoreterms{
     left: 5%;
     top: 89%;
@@ -205,7 +452,8 @@ div.standardroommoreterms{
 }
 
 div.standardroommoretermsstatement{
-    margin-top: 5%;
+    position: absolute;
+    top: 20%;
     height: 20%;
     width: 20%;
 }
@@ -213,10 +461,28 @@ div.standardroommoretermsstatement{
 p.standardroommoretermsstatement{
     font-family: sans-serif;
     color: #222;
-    font-size: 16;
+    font-size: 15;
     font-weight: bold;
     opacity: .9;
 }
 
+div.standardroommoretermstitle{
+    position: absolute;
+    left: 22%;
+    top: 31.5%;
+    height: 20%;
+    width: 40%;
+}
+
+a.standardroommoretermstitle{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 15;
+    opacity: .9;
+}
+
+a.standardroommoretermstitle:hover{
+    opacity: 1;
+}
 
 

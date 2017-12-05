@@ -27,7 +27,7 @@
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="../aboutme.html">
+                        <a class="navbarlogo" href="../index.php">
                             <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -54,7 +54,7 @@
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="../aboutme.html">
+                        <a class="navbarlogo" href="../index.php">
                             <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -122,19 +122,19 @@
                         <div class="juniorsuitesimages">
                             <ul class="juniorsuitesimage">
                                 <a class="juniorsuitesimage1" onclick="selectSlides(1)">
-                                    <img class src="../images/juniorsuiteimages/1.jpg">
+                                    <img src="../images/juniorsuiteimages/1.jpg">
                                 </a>
                                 <a class="juniorsuitesimage2" onclick="selectSlides(2)">
-                                    <img class src="../images/juniorsuiteimages/2.jpg">
+                                    <img src="../images/juniorsuiteimages/2.jpg">
                                 </a>
                                 <a class="juniorsuitesimage3" onclick="selectSlides(3)">
-                                    <img class src="../images/juniorsuiteimages/3.jpg">
+                                    <img src="../images/juniorsuiteimages/3.jpg">
                                 </a>
                                 <a class="juniorsuitesimage4" onclick="selectSlides(4)">
-                                    <img class src="../images/juniorsuiteimages/4.jpg">
+                                    <img src="../images/juniorsuiteimages/4.jpg">
                                 </a>
                                 <a class="juniorsuitesimage5" onclick="selectSlides(5)">
-                                    <img class src="../images/juniorsuiteimages/5.jpg">
+                                    <img src="../images/juniorsuiteimages/5.jpg">
                                 </a>
                             </ul>
                         </div>
@@ -149,13 +149,35 @@
                                 Properties: 
                             </p>                            
                         </div>
+                        <div class="juniorsuitemoreaccommodates">
+                            <p class="juniorsuitemoreaccommodates">
+                                Accommodates: 2 
+                            </p>
+                        </div>
+                        <div class="juniorsuitemoresize">
+                            <p class="juniorsuitemoresize">
+                                Size: 260 sq ft
+                            </p>
+                        </div>
+                        <div class="juniorsuitemorebeds">
+                            <p class="juniorsuitemorebeds">
+                                Beds: 2 Double(s)
+                            </p>
+                        </div>
                     </div>   
                     <div class="juniorsuitemoreinfo">
                         <div class="juniorsuitemoreinfostatement">
                             <p class="juniorsuitemoreinfostatement">
                                 More Info: 
                             </p>                            
-                        </div>                        
+                        </div> 
+                        <div class="juniorsuitemoremoreinfo">
+                            <p class="juniorsuitemoremoreinfo">
+                                Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. 
+                                With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out 
+                                and enjoy the breathtaking views of the city skyline. 
+                            </p>
+                        </div>                    
                     </div>   
                     <div class="juniorsuitemoreamenities">
                         <div class="juniorsuitemoreamenitiesstatement">
@@ -163,12 +185,97 @@
                                 Amenities: 
                             </p>                            
                         </div>
+                        <div class="juniorsuitemoreamenitiesac">
+                            <div class="juniorsuitemoreamenitiesacimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitiesactitle">
+                                <p class="juniorsuitemoreamenitiesactitle">
+                                    A/C
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitiestv">
+                            <div class="juniorsuitemoreamenitiestvimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitiestvtitle">
+                                <p class="juniorsuitemoreamenitiestvtitle">
+                                    TV
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitiesminibar">
+                            <div class="juniorsuitemoreamenitiesminibarimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitiesminibartitle">
+                                <p class="juniorsuitemoreamenitiesminibartitle">
+                                    Minibar
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitieskitchen">
+                            <div class="juniorsuitemoreamenitieskitchenimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitieskitchentitle">
+                                <p class="juniorsuitemoreamenitieskitchentitle">
+                                    Kitchen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitieswifi">
+                            <div class="juniorsuitemoreamenitieswifiimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitieswifititle">
+                                <p class="juniorsuitemoreamenitieswifititle">
+                                    Wifi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitiessafe">
+                            <div class="juniorsuitemoreamenitiessafeimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitiessafetitle">
+                                <p class="juniorsuitemoreamenitiessafetitle">
+                                    Safe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitiestelephone">
+                            <div class="juniorsuitemoreamenitiestelephoneimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitiestelephonetitle">
+                                <p class="juniorsuitemoreamenitiestelephonetitle">
+                                    Telephone
+                                </p>
+                            </div>
+                        </div>
+                        <div class="juniorsuitemoreamenitiestowels">
+                            <div class="juniorsuitemoreamenitiestowelsimg">
+                                <!-- <img src="../images/juniorsuiteimages/5.jpg"> -->
+                            </div>
+                            <div class="juniorsuitemoreamenitiestowelstitle">
+                                <p class="juniorsuitemoreamenitiestowelstitle">
+                                    Towels
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="juniorsuitemoreterms">
                         <div class="juniorsuitemoretermsstatement">
                             <p class="juniorsuitemoretermsstatement">
                                 Terms: 
                             </p>                            
+                        </div>
+                        <div class="juniorsuitemoretermstitle">
+                            <a href="" class="juniorsuitemoretermstitle">
+                                Read Our Policies
+                            </a>
                         </div>                       
                     </div>  
                 </div>

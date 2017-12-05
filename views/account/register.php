@@ -27,7 +27,7 @@
                         <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
                     </ul>
                 </nav>
-                <a class="navbarlogo" href="aboutme.html">
+                <a class="navbarlogo" href="../index.php">
                     <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                 </a> 
             </div>  

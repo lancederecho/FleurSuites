@@ -27,7 +27,7 @@
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="../aboutme.html">
+                        <a class="navbarlogo" href="../index.php">
                             <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -54,7 +54,7 @@
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
                         </nav>
-                        <a class="navbarlogo" href="../aboutme.html">
+                        <a class="navbarlogo" href="../index.php">
                             <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
                         </a> 
                     </div>  
@@ -149,13 +149,36 @@
                                 Properties: 
                             </p>                            
                         </div>
+                        <div class="standardroommoreaccommodates">
+                            <p class="standardroommoreaccommodates">
+                                Accommodates: 2 
+                            </p>
+                        </div>
+                        <div class="standardroommoresize">
+                            <p class="standardroommoresize">
+                                Size: 230 sq ft
+                            </p>
+                        </div>
+                        <div class="standardroommorebeds">
+                            <p class="standardroommorebeds">
+                                Beds: 1 Double(s)
+                            </p>
+                        </div>
                     </div>   
                     <div class="standardroommoreinfo">
                         <div class="standardroommoreinfostatement">
                             <p class="standardroommoreinfostatement">
                                 More Info: 
                             </p>                            
-                        </div>                        
+                        </div>   
+                        <div class="standardroommoremoreinfo">
+                            <p class="standardroommoremoreinfo">
+                                Functional and comfortable. Sit back and enjoy one of our brand new 280 
+                                square foot Standard Rooms. Complete with courtyard views, stylish decor 
+                                and natural light, our Standard Rooms are the perfect combination of function 
+                                and comfort. Ideally suited for today’s business or leisure travelers.
+                            </p>
+                        </div>                           
                     </div>   
                     <div class="standardroommoreamenities">
                         <div class="standardroommoreamenitiesstatement">
@@ -163,13 +186,88 @@
                                 Amenities: 
                             </p>                            
                         </div>
+                        <div class="standardroommoreamenitiesac">
+                            <div class="standardroommoreamenitiesacimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitiesactitle">
+                                <p class="standardroommoreamenitiesactitle">
+                                    A/C
+                                </p>
+                            </div>
+                        </div>
+                        <div class="standardroommoreamenitiestv">
+                            <div class="standardroommoreamenitiestvimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitiestvtitle">
+                                <p class="standardroommoreamenitiestvtitle">
+                                    TV
+                                </p>
+                            </div>
+                        </div>
+                        <div class="standardroommoreamenitiesminibar">
+                            <div class="standardroommoreamenitiesminibarimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitiesminibartitle">
+                                <p class="standardroommoreamenitiesminibartitle">
+                                    Minibar
+                                </p>
+                            </div>
+                        </div>
+                        <div class="standardroommoreamenitieskitchen">
+                            <div class="standardroommoreamenitieskitchenimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitieskitchentitle">
+                                <p class="standardroommoreamenitieskitchentitle">
+                                    Kitchen
+                                </p>
+                            </div>
+                        </div>
+                        <div class="standardroommoreamenitieswifi">
+                            <div class="standardroommoreamenitieswifiimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitieswifititle">
+                                <p class="standardroommoreamenitieswifititle">
+                                    Wifi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="standardroommoreamenitiessafe">
+                            <div class="standardroommoreamenitiessafeimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitiessafetitle">
+                                <p class="standardroommoreamenitiessafetitle">
+                                    Safe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="standardroommoreamenitiestelephone">
+                            <div class="standardroommoreamenitiestelephoneimg">
+                                <!-- <img src="../images/standardroomimages/5.jpg"> -->
+                            </div>
+                            <div class="standardroommoreamenitiestelephonetitle">
+                                <p class="standardroommoreamenitiestelephonetitle">
+                                    Telephone
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="standardroommoreterms">
                         <div class="standardroommoretermsstatement">
                             <p class="standardroommoretermsstatement">
                                 Terms: 
                             </p>                            
-                        </div>                       
+                        </div>   
+                        <div class="standardroommoretermstitle">
+                            <a href="" class="standardroommoretermstitle">
+                                Read Our Policies
+                            </a>
+                        </div>                     
                     </div>  
                 </div>
                 <div class="standardroomcheckinout">
