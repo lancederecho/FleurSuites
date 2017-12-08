@@ -1,6 +1,9 @@
-<?php
+<?php 
+    include "../../controllers/juniorsuitecheckinoutfunction.php";
+    include "../../controllers/juniorsuitesfunction.php";
+?>
 
-    session_start();
+<?php
 
     if ($_SESSION && isset($_SESSION['userfirstname'])) {
         ?>
@@ -22,7 +25,7 @@
                         <nav class="navbar">
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
-                                <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
                                 <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
@@ -49,7 +52,7 @@
                         <nav class="navbar">
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
-                                <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
                                 <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
@@ -66,7 +69,7 @@
 
 <html>
     <head>
-        <title>Rooms || Fleur Suites</title>
+        <title>Junior Suite || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
         <script src="../js/slideshow.js"></script>
@@ -88,13 +91,13 @@
         <div class="juniorsuitebody">
             <div class="juniorsuitemorebody">
                 <div class="roomsback">
-                    <a href="../rooms.php">
+                    <a href="rooms.php">
                         <img class="roomsback" src="../images/icons/back.ico"/>
                     </a>
                 </div>
                 <div class="juniorsuitemorebodystatement">
                     <p class="juniorsuitemorebodystatement">
-                        Junior Suites
+                        <?php echo $type; ?>
                     </p>
                 </div>
                 <div class="juniorsuitemore">
@@ -151,17 +154,17 @@
                         </div>
                         <div class="juniorsuitemoreaccommodates">
                             <p class="juniorsuitemoreaccommodates">
-                                Accommodates: 2 
+                                Accommodates: <?php echo $accomodates; ?> 
                             </p>
                         </div>
                         <div class="juniorsuitemoresize">
                             <p class="juniorsuitemoresize">
-                                Size: 260 sq ft
+                                Size: <?php echo $size; ?>
                             </p>
                         </div>
                         <div class="juniorsuitemorebeds">
                             <p class="juniorsuitemorebeds">
-                                Beds: 2 Double(s)
+                                Beds: <?php echo $numbedding; ?> <?php echo $bedding; ?>(s)
                             </p>
                         </div>
                     </div>   
@@ -173,9 +176,7 @@
                         </div> 
                         <div class="juniorsuitemoremoreinfo">
                             <p class="juniorsuitemoremoreinfo">
-                                Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. 
-                                With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out 
-                                and enjoy the breathtaking views of the city skyline. 
+                                <?php echo $moreinfo; ?> 
                             </p>
                         </div>                    
                     </div>   
@@ -280,7 +281,30 @@
                     </div>  
                 </div>
                 <div class="juniorsuitecheckinout">
-                    
+                    <div class="juniorsuitecheckinoutprice">
+                        <p class="juniorsuitecheckinoutpricefrom">
+                            From
+                        </p>
+                        <p class="juniorsuitecheckinoutprice">
+                            ₱<?php echo $price; ?>
+                        </p>
+                        <p class="juniorsuitecheckinoutpricepernight">
+                            Per Night
+                        </p>
+                    </div>
+
+                    <!-- Check in Check Out -->
+                    <form action="" class="juniorsuitecheckinout" method="post">
+                        <div class="juniorsuitecheckin">
+                            <input placeholder="Check In" name="juniorsuitecheckin" class="juniorsuitecheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  min="<?php echo $checkindate; ?>">
+                        </div>
+                        <div class="juniorsuitecheckout">
+                            <input placeholder="Check Out" name="juniorsuitecheckout" class="juniorsuitecheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
+                        </div>
+                        <div class="juniorsuitecheckinoutreserve">
+                            <input type="submit" class="reservebutton" id="reservebutton" name="reservebutton" value="Reserve Now"/>
+                        </div>
+                    </form>
                 </div>
             </div>
 

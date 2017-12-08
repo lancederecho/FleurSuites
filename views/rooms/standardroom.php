@@ -1,6 +1,9 @@
-<?php
+<?php 
+    include "../../controllers/standardroomcheckinoutfunction.php";
+    include "../../controllers/standardroomfunction.php";
+?>
 
-    session_start();
+<?php
 
     if ($_SESSION && isset($_SESSION['userfirstname'])) {
         ?>
@@ -22,7 +25,7 @@
                         <nav class="navbar">
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
-                                <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
                                 <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
@@ -49,7 +52,7 @@
                         <nav class="navbar">
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
-                                <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
                                 <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
@@ -66,7 +69,7 @@
 
 <html>
     <head>
-        <title>Rooms || Fleur Suites</title>
+        <title>Standard Room || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
         <script src="../js/slideshow.js"></script>
@@ -88,13 +91,13 @@
         <div class="standardroombody">
             <div class="standardroommorebody">
                 <div class="roomsback">
-                    <a href="../rooms.php">
+                    <a href="rooms.php">
                         <img class="roomsback" src="../images/icons/back.ico"/>
                     </a>
                 </div>
                 <div class="standardroommorebodystatement">
                     <p class="standardroommorebodystatement">
-                        Standard Room
+                        <?php echo $type; ?>
                     </p>
                 </div>
                 <div class="standardroommore">
@@ -151,17 +154,17 @@
                         </div>
                         <div class="standardroommoreaccommodates">
                             <p class="standardroommoreaccommodates">
-                                Accommodates: 2 
+                                Accommodates: <?php echo $accomodates; ?> 
                             </p>
                         </div>
                         <div class="standardroommoresize">
                             <p class="standardroommoresize">
-                                Size: 230 sq ft
+                                Size: <?php echo $size; ?>
                             </p>
                         </div>
                         <div class="standardroommorebeds">
                             <p class="standardroommorebeds">
-                                Beds: 1 Double(s)
+                                Beds: <?php echo $numbedding; ?> <?php echo $bedding; ?>(s)
                             </p>
                         </div>
                     </div>   
@@ -173,10 +176,7 @@
                         </div>   
                         <div class="standardroommoremoreinfo">
                             <p class="standardroommoremoreinfo">
-                                Functional and comfortable. Sit back and enjoy one of our brand new 280 
-                                square foot Standard Rooms. Complete with courtyard views, stylish decor 
-                                and natural light, our Standard Rooms are the perfect combination of function 
-                                and comfort. Ideally suited for today’s business or leisure travelers.
+                                <?php echo $moreinfo; ?> 
                             </p>
                         </div>                           
                     </div>   
@@ -271,7 +271,30 @@
                     </div>  
                 </div>
                 <div class="standardroomcheckinout">
-                    
+                    <div class="standardroomcheckinoutprice">
+                        <p class="standardroomcheckinoutpricefrom">
+                            From
+                        </p>
+                        <p class="standardroomcheckinoutprice">
+                            ₱<?php echo $price; ?>
+                        </p>
+                        <p class="standardroomcheckinoutpricepernight">
+                            Per Night
+                        </p>
+                    </div>
+
+                    <!-- Check in Check Out -->
+                    <form action="" class="standardroomcheckinout" method="post">
+                        <div class="standardroomcheckin">
+                            <input placeholder="Check In" name="standardroomcheckin" class="standardroomcheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  min="<?php echo $checkindate; ?>">
+                        </div>
+                        <div class="standardroomcheckout">
+                            <input placeholder="Check Out" name="standardroomcheckout" class="standardroomcheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
+                        </div>
+                        <div class="standardroomcheckinoutreserve">
+                            <input type="submit" class="reservebutton" id="reservebutton" name="reservebutton" value="Reserve Now"/>
+                        </div>
+                    </form>
                 </div>
             </div>
 

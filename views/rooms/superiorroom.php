@@ -1,7 +1,9 @@
+<?php 
+    include "../../controllers/superiorroomcheckinoutfunction.php";
+    include "../../controllers/superiorroomfunction.php";
+?>
+
 <?php
-
-    session_start();
-
     if ($_SESSION && isset($_SESSION['userfirstname'])) {
         ?>
             <html>
@@ -22,7 +24,7 @@
                         <nav class="navbar">
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
-                                <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
                                 <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
@@ -49,7 +51,7 @@
                         <nav class="navbar">
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
-                                <li class="rooms"><a href="../rooms.php">Rooms</a></li>
+                                <li class="rooms"><a href="rooms.php">Rooms</a></li>
                                 <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
                             </ul>
@@ -66,7 +68,7 @@
 
 <html>
     <head>
-        <title>Rooms || Fleur Suites</title>
+        <title>Superior Room || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
         <script src="../js/slideshow.js"></script>
@@ -88,13 +90,13 @@
         <div class="superiorroombody">
             <div class="superiorroommorebody">
                 <div class="roomsback">
-                    <a href="../rooms.php">
+                    <a href="rooms.php">
                         <img class="roomsback" src="../images/icons/back.ico"/>
                     </a>
                 </div>
                 <div class="superiorroommorebodystatement">
                     <p class="superiorroommorebodystatement">
-                        Superior Room
+                        <?php echo $type; ?>
                     </p>
                 </div>
                 <div class="superiorroommore">
@@ -151,17 +153,17 @@
                         </div>
                         <div class="superiorroommoreaccommodates">
                             <p class="superiorroommoreaccommodates">
-                                Accommodates: 2 
+                                Accommodates: <?php echo $accomodates; ?> 
                             </p>
                         </div>
                         <div class="superiorroommoresize">
                             <p class="superiorroommoresize">
-                                Size: 280 sq ft
+                                Size: <?php echo $size; ?>
                             </p>
                         </div>
                         <div class="superiorroommorebeds">
                             <p class="superiorroommorebeds">
-                                Beds: 1 King(s)
+                                Beds: <?php echo $numbedding; ?> <?php echo $bedding; ?>(s)
                             </p>
                         </div>
                     </div>   
@@ -173,11 +175,7 @@
                         </div>   
                         <div class="superiorroommoremoreinfo">
                             <p class="superiorroommoremoreinfo">
-                                Elegant simplicity. Our Superior Rooms give you the space and privacy 
-                                you need to work or play on the road. The spacious 380 square foot rooms 
-                                include an intimate lounge area, business workstation and views of 
-                                the courtyard. Complete with all the regular amenities, our Superior Rooms 
-                                also include a daily newspaper and water bottles.
+                                <?php echo $moreinfo; ?> 
                             </p>
                         </div>                           
                     </div>   
@@ -302,7 +300,30 @@
                     </div>  
                 </div>
                 <div class="superiorroomcheckinout">
-                    
+                    <div class="superiorroomcheckinoutprice">
+                        <p class="superiorroomcheckinoutpricefrom">
+                            From
+                        </p>
+                        <p class="superiorroomcheckinoutprice">
+                            ₱<?php echo $price; ?>
+                        </p>
+                        <p class="superiorroomcheckinoutpricepernight">
+                            Per Night
+                        </p>
+                    </div>
+
+                    <!-- Check in Check Out -->
+                    <form action="" class="superiorroomcheckinout" method="post">
+                        <div class="superiorroomcheckin">
+                            <input placeholder="Check In" name="superiorroomcheckin" class="superiorroomcheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  min="<?php echo $checkindate; ?>">
+                        </div>
+                        <div class="superiorroomcheckout">
+                            <input placeholder="Check Out" name="superiorroomcheckout" class="superiorroomcheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
+                        </div>
+                        <div class="superiorroomcheckinoutreserve">
+                            <input type="submit" class="reservebutton" id="reservebutton" name="reservebutton" value="Reserve Now"/>
+                        </div>
+                    </form>
                 </div>
             </div>
 

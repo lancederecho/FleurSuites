@@ -2,6 +2,7 @@ div.slideshow{
     max-width: 100%;
     position: absolute;
     margin: auto;
+    height: 84%;
     top: 0%;
 }
 
