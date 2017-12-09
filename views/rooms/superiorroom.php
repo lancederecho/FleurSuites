@@ -12,7 +12,7 @@
                     <div class="navbar">       
                         <nav class="mynavbar">
                             <ul>
-                                <li class="myreservations"><a href="../myreservations.php">My Reservations</a></li>
+                                <li class="myreservations"><a href="../transaction/myreservations.php">My Reservations</a></li>
                                 <li class="userprofile"><a href="../controllers/logoutfunction.php">
                                     <?php
                                         echo $_SESSION['userfirstname'];

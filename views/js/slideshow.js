@@ -34,3 +34,20 @@ function showSlides(n) {
   }
   x[slideIndex - 1].style.display = "block";
 } */
+
+/** Days to be disabled as an array */
+var disableddates = ["12-3-2017", "12-11-2017", "12-25-2017", "12-20-2017"];
+
+// Now check if the current date is in disabled dates array. 
+if ($.inArray(currentdate, disableddates) != -1) {
+  return [false];
+}
+
+document.getElementById("myDate").disabled = true;
+
+
+$(function () {
+  $("#juniorsuitecheckin").datepicker({
+    beforeShowDay: DisableSpecificDates
+  });
+});

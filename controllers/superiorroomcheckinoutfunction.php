@@ -39,12 +39,6 @@
                             window.alert('Enter valid check-in and check-out dates');
                         </script>";
                 } else {
-                    if ($_SESSION['status'] == "Taken") {
-                        echo "
-                        <script>
-                            window.alert('Yo takens');
-                        </script>";
-                    } else {
                         $_SESSION['checkin'] = $checkin;
                         $_SESSION['checkout'] = $checkout;
                         $_SESSION['numofdays'] = $validdays;
@@ -55,7 +49,7 @@
                         <script>
                             window.location.href=\"../transaction/reservationsummary.php\";
                         </script>";
-                    }
+                    
                 }
             }
         }

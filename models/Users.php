@@ -34,6 +34,18 @@
 			return($result->num_rows>0)? $res: FALSE;
 		}
 
+		function select_all_admin(){
+			$query = "SELECT * FROM admin";
+			$result = mysqli_query($this->conn, $query);			
+			
+			$res = array();
+			while($rows = mysqli_fetch_array($result)){
+				
+				array_push($res, $rows);
+			}
+			return($result->num_rows>0)? $res: FALSE;
+		}
+
 		function update_admin($Member_num,$Tin,$FirstName,$LastName,$Email,$Username,$MobileNum,$Password) {
 			   	$query = "UPDATE admin SET 
 			   			Tin =\"".$Tin."\",

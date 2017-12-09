@@ -19,8 +19,9 @@
 
     foreach($rows as $index => $values){
         $roomtype = $values['type'];
+        $status = $values['status'];
  
-        if($roomtype == "Superior Room"){
+        if($roomtype == "Superior Room" && $status == "Free"){
             if($count == 0) {
                 $id = $values['roomid'];
                 $count++;
@@ -33,8 +34,18 @@
             $accomodates = $values['accomodates'];
             $moreinfo = $values['moreinfo'];
             $amenities = $values['amenities'];
+        } else if ($roomtype == "Superior Room" && $status == "Taken") {
+            $id = $values['roomid'];
+            $type = $values['type'];
+            $price = $values['price'];
+            $numbedding = $values['numbedding'];
+            $bedding = $values['bedding'];
+            $size = $values['size'];
+            $accomodates = $values['accomodates'];
+            $moreinfo = $values['moreinfo'];
+            $amenities = $values['amenities'];
             $status = $values['status'];
-        } 
+        }      
     }
 
     $_SESSION['id'] = $id;

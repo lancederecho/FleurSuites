@@ -19,12 +19,23 @@
 
     foreach($rows as $index => $values){
         $roomtype = $values['type'];
+        $status = $values['status'];
  
-        if($roomtype == "Standard Room"){
+        if($roomtype == "Standard Room" && $status == "Free"){
             if($count == 0) {
                 $id = $values['roomid'];
                 $count++;
             }    
+            $type = $values['type'];
+            $price = $values['price'];
+            $numbedding = $values['numbedding'];
+            $bedding = $values['bedding'];
+            $size = $values['size'];
+            $accomodates = $values['accomodates'];
+            $moreinfo = $values['moreinfo'];
+            $amenities = $values['amenities'];
+        } else if ($roomtype == "Standard Room" && $status == "Taken") {
+            $id = $values['roomid'];
             $type = $values['type'];
             $price = $values['price'];
             $numbedding = $values['numbedding'];

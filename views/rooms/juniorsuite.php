@@ -13,7 +13,7 @@
                     <div class="navbar">       
                         <nav class="mynavbar">
                             <ul>
-                                <li class="myreservations"><a href="../myreservations.php">My Reservations</a></li>
+                                <li class="myreservations"><a href="../transaction/myreservations.php">My Reservations</a></li>
                                 <li class="userprofile"><a href="../controllers/logoutfunction.php">
                                     <?php
                                         echo $_SESSION['userfirstname'];
@@ -71,6 +71,8 @@
     <head>
         <title>Junior Suite || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
+        <script src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <script src="../js/navscroll.js"></script>
         <script src="../js/slideshow.js"></script>
         <link rel="shortcut icon" href="images/title.ico">
@@ -292,14 +294,44 @@
                             Per Night
                         </p>
                     </div>
+<!--                     <script>
+                        window.alert('<?php/*  echo $checkindate;  */?>');
+                    </script>
+                    <script type="text/javascript">
+                        var unavailableDates = ["<?php /* echo $checkindate;  */?>", "14-12-2017", "15-12-2017"];
+
+                        function unavailable(date) {
+                            dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+                            if ($.inArray(dmy, unavailableDates) == -1) {
+                                return [true, ""];
+                            } else {
+                                return [false, "", "Unavailable"];
+                            }
+                        }
+
+                        $(function() {
+                            $("#juniorsuitecheckin").datepicker({
+                                dateFormat: 'dd MM yy',
+                                beforeShowDay: unavailable
+                            });
+                            $("#juniorsuitecheckout").datepicker({
+                                dateFormat: 'dd MM yy',
+                                beforeShowDay: unavailable
+                            });
+                        });
+
+                        
+                    </script> -->
 
                     <!-- Check in Check Out -->
                     <form action="" class="juniorsuitecheckinout" method="post">
                         <div class="juniorsuitecheckin">
-                            <input placeholder="Check In" name="juniorsuitecheckin" class="juniorsuitecheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  min="<?php echo $checkindate; ?>">
+                            <input placeholder="Check In" name="juniorsuitecheckin" id="juniorsuitecheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkindate; ?>">
+                           <!--  <input placeholder="Check In" name="juniorsuitecheckout" id="juniorsuitecheckin"> -->
                         </div>
                         <div class="juniorsuitecheckout">
-                            <input placeholder="Check Out" name="juniorsuitecheckout" class="juniorsuitecheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
+                            <input placeholder="Check Out" name="juniorsuitecheckout" id="juniorsuitecheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
+                            <!-- <input placeholder="Check Out" name="juniorsuitecheckout" id="juniorsuitecheckout" type="text"> -->
                         </div>
                         <div class="juniorsuitecheckinoutreserve">
                             <input type="submit" class="reservebutton" id="reservebutton" name="reservebutton" value="Reserve Now"/>

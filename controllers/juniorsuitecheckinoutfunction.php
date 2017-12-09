@@ -39,25 +39,6 @@
                             window.alert('Enter valid check-in and check-out dates');
                         </script>";
                 } else {
-                    if ($_SESSION['status'] == "Taken") { //////////////////////ASSUME NA NACONFIRM SA ADMIN
- 
-/*                         $rows = $rooms->select_all_reservations();
-
-                        foreach($rows as $index => $values){
-                            $roomid = $values['roomid'];
-                    
-                            if($roomid == $_SESSION['id']){   
-                                $reservecheckin = $values['checkin'];
-                                $reservecheckout = $values['checkout'];
-                            }      
-                        }
-
-
-                        echo "
-                        <script>
-                            window.alert('Taken');
-                        </script>"; */
-                    } else {
                         $_SESSION['checkin'] = $checkin;
                         $_SESSION['checkout'] = $checkout;
                         $_SESSION['numofdays'] = $validdays;
@@ -68,7 +49,7 @@
                         <script>
                             window.location.href=\"../transaction/reservationsummary.php\";
                         </script>";
-                    }
+                    
                 }
             }
         }

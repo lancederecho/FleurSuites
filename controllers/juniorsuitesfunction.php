@@ -34,7 +34,7 @@
             $accomodates = $values['accomodates'];
             $moreinfo = $values['moreinfo'];
             $amenities = $values['amenities'];
-        } else if ($roomtype == "Junior Suite") {
+        } else if ($roomtype == "Junior Suite" && $status == "Taken") {
             $id = $values['roomid'];
             $type = $values['type'];
             $price = $values['price'];
