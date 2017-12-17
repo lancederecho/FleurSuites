@@ -9,6 +9,8 @@
 
     $userrows = $reserve->select_all_user();
 
+    $historyrows = $reserve->select_all_history();
+
     if(isset($_REQUEST['reserveyourroombutton']) && $_REQUEST['reserveyourroombutton'] == "Reserve Your Room"){
             $result = $reserve->insert_roomreservation($datereserved, $checkin, $checkout, $numofdays, $roomid, 
                     $userid);

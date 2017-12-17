@@ -168,11 +168,39 @@
         <footer>
             <div align="center" class="footer">
                 <div class="footercontent">
-                    FOOTER
+                    <div class="footeraboutdevelopers">
+                        <a href="aboutdevelopers.php">
+                            About Developers
+                        </a>
+                    </div>
+                    <div class="footercontactus">
+                        <a href="contactus.php">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="footeraboutus">
+                        <a href="aboutus.php">
+                            About Us
+                        </a>
+                    </div>
+                    <div class="footerpolicy">
+                        <a href="policy.php">
+                            Policy
+                        </a>
+                    </div>
+                    <div class="footersitemap">
+                        <a href="contactus.php">
+                            Site Map
+                        </a>
+                    </div>
+                    <div class="footercopyright">
+                        <p>
+                            Copyright 2017 © Fleur Suites. All Rights Reserved.
+                        </p>
+                    </div>
                 </div>
-                
             </div>
-        </footer>
+        </footer>    
     </body>
 
 

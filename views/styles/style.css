@@ -13,6 +13,8 @@ div.footer{
     bottom: 0;
 }
 
+/* ///////////////////////////////////////////FOOTER////////////////////////////////////////////////////// */
+
 div.footercontent{
     top: 0%;
     left: 5%;
@@ -23,6 +25,71 @@ div.footercontent{
     position: absolute;
     bottom: 0;
 }
+
+div.footercontent a{
+    text-decoration: none;
+    color: #222;
+    font-family: sans-serif;
+    font-size: 15;
+    opacity: .6;
+}
+
+div.footercontent a:hover{
+    opacity: 1;
+    transition: ease-in-out .8s;
+}
+
+div.footercontent p{
+    color: #222;
+    font-family: sans-serif;
+    font-size: 15;
+    opacity: .6;
+}
+
+div.footeraboutdevelopers{
+    top: 15%;
+    left: 5%;
+    height: 10%;
+    width: 30%;
+    position: absolute;
+}
+div.footercontactus{
+    top: 15%;
+    left: 35%;
+    height: 10%;
+    width: 30%;
+    position: absolute;
+}
+div.footeraboutus{
+    top: 35%;
+    left: 35%;
+    height: 10%;
+    width: 30%;
+    position: absolute;
+}
+div.footerpolicy{
+    top: 35%;
+    left: 5%;
+    height: 10%;
+    width: 30%;
+    position: absolute;
+}
+div.footersitemap{
+    top: 15%;
+    right: 5%;
+    height: 10%;
+    width: 30%;
+    position: absolute;
+}
+div.footercopyright{
+    top: 60%;
+    left: 25%;
+    height: 30%;
+    width: 50%;
+    position: absolute;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 div.background{
     transition: ease-in-out;

@@ -38,7 +38,7 @@
                     </div>  
                 </header>
     <head>
-        <title>Manage Customer || Fleur Suites</title>
+        <title>History || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
         <script src="../js/homeSlideshow.js"></script>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="roomsstatement">
-            <p align="center" class="roomsstatement">Manage Reservations</p>
+            <p align="center" class="roomsstatement">Reservation History</p>
         </div>
 
         <div class="roomsbody">
@@ -71,7 +71,7 @@
                 
                 
                     <p align="center" class="juniorsuitestatement">
-                       Reservation Requests
+                       Reservation History
                       
                     </p>
 
@@ -82,65 +82,42 @@
                         <tr>
                             <th>User Name</th>
                             <th>Reservation ID</th>
-                            <th>Reservation date</th>
+                            <th>Confirmation Date</th>
+                            <th>Reservation Date</th>
                             <th>Check In</th>
                             <th>Check Out</th>
                             <th>No. of Days</th>
                             <th>Room ID</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                            <th></th>
                         </tr>
                         </thead>
                        
                   <tbody>
                         <tr>
 <?php 
-                        if ($rows > 0) {
-                           $count = 0;
-
-                            foreach($rows as $index => $values){
+                        if ($historyrows > 0) {
+                            foreach($historyrows as $index => $values){
                                 $userid = $values['userid'];
                                 $reserveid = $values['reserveid'];
                                 $roomid = $values['roomid'];
-
-                                if(isset($values['status']) && $values['status'] == "pending") {
-                                    foreach($userrows as $userindex => $uservalues){
-                                        $userid = $values['userid'];
-        
-                                        if($userid == $uservalues['userid']){
-                                            if($count == 0) {
-                                            echo"<tr>
-                                                <td>".$uservalues['userfirstname']." ".$uservalues['userlastname']."</td>
-                                                ";
-                                            }    
-                                        }
+                                
+                                foreach($userrows as $userindex => $uservalues){
+                                    $userid = $values['userid'];
+    
+                                    if($userid == $uservalues['userid']){
+                                        echo"<tr>
+                                            <td>".$uservalues['userfirstname']." ".$uservalues['userlastname']."</td>
+                                            ";
                                     }
-                                                                    
-                                    $_SESSION['historyreserveid']=$values['reserveid'];
-                                    $_SESSION['historydatereserved']=$values['datereserved'];
-                                    $_SESSION['historycheckin']=$values['checkin'];
-                                    $_SESSION['historycheckout']=$values['checkout'];
-                                    $_SESSION['historynumofdays']=$values['numofdays'];
-                                    $_SESSION['historyroomid']=$values['roomid'];
-                                    $_SESSION['historyuserid']=$values['userid'];
-
-                                    echo"
-                                        <td>".$values['reserveid']."</td>
-                                        <td>".$values['datereserved']."</td>
-                                        <td>".$values['checkin']."</td>
-                                        <td>".$values['checkout']."</td>
-                                        <td>".$values['numofdays']."</td>
-                                        <td>".$values['roomid']."</td>
-                                        <td>".$values['status']."</td>
-                                        <td>
-                                            <a href='deletereservation.php?delete=yes & reserveid=$reserveid'>DELETE</a>
-                                        </td>
-                                         <td>
-                                            <a href='confirmreservation.php?confirm=yes & roomid=$roomid & reserveid=$reserveid'>CONFIRM</a>
-                                        </td>
-                                        ";
                                 }
+                                echo"
+                                    <td>".$values['reserveid']."</td>
+                                    <td>".$values['dateconfirmed']."</td>
+                                    <td>".$values['datereserved']."</td>
+                                    <td>".$values['checkin']."</td>
+                                    <td>".$values['checkout']."</td>
+                                    <td>".$values['numofdays']."</td>
+                                    <td>".$values['roomid']."</td>
+                                    ";
                             }
                         }
  ?> </tr>

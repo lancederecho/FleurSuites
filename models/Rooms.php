@@ -47,6 +47,18 @@
 			return($result->num_rows>0)? $res: FALSE;
 		}
 
+		function select_all_history(){
+			$query = "SELECT * FROM history";
+			$result = mysqli_query($this->conn, $query);			
+			
+			$res = array();
+			while($rows = mysqli_fetch_array($result)){
+				
+				array_push($res, $rows);
+			}
+			return($result->num_rows>0)? $res: FALSE;
+		}	
+
 		function select_all_reservations(){
 			$query = "SELECT * FROM roomreserve";
 			$result = mysqli_query($this->conn, $query);			

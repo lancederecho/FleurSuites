@@ -28,12 +28,15 @@
                         $_SESSION['adminid'] = $values['adminid'];
                     }
                     if (!empty($values['adminfirstname'])){
+                        $_SESSION['adminid'] = $values['adminid'];
                         $_SESSION['adminfirstname'] = $values['adminfirstname'];
                     }
                     if ($_POST && !empty($_POST['loginemail'])){
+                        $_SESSION['adminid'] = $values['adminid'];
                         $_SESSION['loginemail'] = $_POST['loginemail'];
                     }
                     if ($_POST && !empty($_POST['adminpassword'])){
+                        $_SESSION['adminid'] = $values['adminid'];
                         $_SESSION['adminpassword'] = $_POST['adminpassword'];
                     }
 

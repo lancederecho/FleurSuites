@@ -26,6 +26,7 @@
             <li class="rooms"><a href="adminroom.php">Manage Room</a></li>
             <li class="contactus"><a href="adminreport.php">Manage Report</a></li>
             <li class="aboutus"><a href="admincustomer.php">Manage Customer</a></li>
+            <li class="aboutus"><a href="history.php">History</a></li>
         </ul>
     </nav>
 <a class="navbarlogo" href="index.php">
