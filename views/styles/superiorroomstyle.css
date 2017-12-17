@@ -596,15 +596,32 @@ p.superiorroomcheckinoutpricepernight{
     opacity: .9;
 }
 
+div.superiorroomchecktime{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 8%;
+    width: 80%;
+}
+
+input.superiorroomchecktime{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 1px rgb(199, 199, 199);
+    cursor: pointer;
+    text-align: center;
+}
+
 div.superiorroomcheckin{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 10%;
-    height: 15%;
+    height: 13%;
     width: 80%;
 }
 
-div.superiorroomcheckin input{
+input.superiorroomcheckin{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -615,27 +632,19 @@ div.superiorroomcheckin input{
 
 div.superiorroomcheckout{
     position: absolute;
-    top: 62%;
+    top: 65%;
     left: 10%;
-    height: 15%;
+    height: 13%;
     width: 80%;
 }
 
-div.superiorroomcheckout input{
+input.superiorroomcheckout{
     position: absolute;
     height: 100%;
     width: 100%;
     border: solid 1px rgb(199, 199, 199);
     cursor: pointer;
     text-align: center;
-}
-
-div.superiorroomcheckout{
-    position: absolute;
-    top: 62%;
-    left: 10%;
-    height: 15%;
-    width: 80%;
 }
 
 div.superiorroomcheckinoutreserve{

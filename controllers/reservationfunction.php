@@ -31,8 +31,7 @@
         $result = $reserve->insert_roomreservation($datereserved, $checkin, $checkout, $numofdays, $roomid, 
                 $userid);
 		if($result){
-            $status = "Taken";
-            $reserve->update_rooms($roomid, $status, $userid);
+            $reserve->update_rooms($roomid, $userid);
             //Unsettting room sessions
             unset($_SESSION['checkin']);
             unset($_SESSION['checkout']);

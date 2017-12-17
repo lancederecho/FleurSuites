@@ -54,12 +54,7 @@
             }
         }
 
-    } else {
-                echo "
-                <script>
-                    window.alert('Login to continue');
-                </script>";
-    }
+    } 
 
 
 ?>

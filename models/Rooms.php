@@ -4,7 +4,19 @@
 <?php
     
 	class Rooms extends DBConnection{
-		
+		function select_all_user(){
+			$query = "SELECT * FROM user";
+			$result = mysqli_query($this->conn, $query);			
+			
+			$res = array();
+			while($rows = mysqli_fetch_array($result)){
+				
+				array_push($res, $rows);
+			}
+			return($result->num_rows>0)? $res: FALSE;
+		}
+
+
 		function insert_room($registeremail, $registerpass, $registertitle, $registerfirst, 
                 $registerlast, $registergender, $birthdate, $registerline1, $registercity, $registercountry, 
 				$registerline2, $registerpostalcode, $registercountrycode, $registerphonenum){
@@ -61,8 +73,17 @@
 			exit;
 		}
 
-		function update_rooms($roomid, $status, $userid) {
-			$query = "UPDATE rooms SET status =\"".$status."\",
+		function delete_reservation($reserveid){
+			$query = "DELETE FROM roomreserve WHERE reserveid = $reserveid";
+			$result = mysqli_query($this->conn, $query);
+			return(($result)?TRUE:FALSE);
+
+			exit;
+			
+		}	
+
+		function update_rooms($roomid, $userid) {
+			$query = "UPDATE rooms SET
 					userid =\"".$userid."\"WHERE roomid = \"".$roomid."\" ";
 
 			$result = mysqli_query($this->conn,$query);

@@ -314,6 +314,9 @@
 
                     <!-- Check in Check Out -->
                     <form action="" class="superiorroomcheckinout" method="post">
+                        <div class="superiorroomchecktime">
+                            <input placeholder="Time" name="superiorroomchecktime" class="superiorroomchecktime" type="text" onfocus="(this.type='time')" onblur="(this.type='time')">
+                        </div>
                         <div class="superiorroomcheckin">
                             <input placeholder="Check In" name="superiorroomcheckin" class="superiorroomcheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  min="<?php echo $checkindate; ?>">
                         </div>

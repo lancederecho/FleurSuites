@@ -71,8 +71,8 @@
     <head>
         <title>Junior Suite || Fleur Suites</title>
         <script src="../js/jquery.js"></script>
-        <script src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<!--         <script src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.12.1.custom/jquery-ui.min.css"> -->
         <script src="../js/navscroll.js"></script>
         <script src="../js/slideshow.js"></script>
         <link rel="shortcut icon" href="images/title.ico">
@@ -325,12 +325,15 @@
 
                     <!-- Check in Check Out -->
                     <form action="" class="juniorsuitecheckinout" method="post">
+                        <div class="juniorsuitechecktime">
+                            <input placeholder="Time" name="juniorsuitechecktime" class="juniorsuitechecktime" type="text" onfocus="(this.type='time')" onblur="(this.type='time')">
+                        </div>
                         <div class="juniorsuitecheckin">
-                            <input placeholder="Check In" name="juniorsuitecheckin" id="juniorsuitecheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkindate; ?>">
+                            <input placeholder="Check In" name="juniorsuitecheckin" class="juniorsuitecheckin" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkindate; ?>">
                            <!--  <input placeholder="Check In" name="juniorsuitecheckout" id="juniorsuitecheckin"> -->
                         </div>
                         <div class="juniorsuitecheckout">
-                            <input placeholder="Check Out" name="juniorsuitecheckout" id="juniorsuitecheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
+                            <input placeholder="Check Out" name="juniorsuitecheckout" class="juniorsuitecheckout" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" min="<?php echo $checkoutdate; ?>">
                             <!-- <input placeholder="Check Out" name="juniorsuitecheckout" id="juniorsuitecheckout" type="text"> -->
                         </div>
                         <div class="juniorsuitecheckinoutreserve">

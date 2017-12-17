@@ -1,40 +1,56 @@
+<?php session_start(); 
+     if(!isset($_SESSION['adminfirstname'])){
+        header("location:../account/login.php");
+     }
+?>
+
 <html>
+
+<link rel="shortcut icon" href="images/title.ico">
+                <header>
+                    <div class="navbar">       
+                        <nav class="mynavbar">
+                            <ul>
+                               
+                                <li class="userprofile"><a href="../controllers/logoutfunction.php">
+                                    <?php
+                                        echo $_SESSION['adminfirstname'];
+                                    ?>
+                                </a></li>
+                                <li class="logout"><a href="../../controllers/logoutfunction.php">Logout</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar">
+                            <ul>
+                            <li class="home"><a href="adminhome.php">Request Reservation</a></li>
+                            <li class="policy"><a href="adminconfirmreservation.php">Comfirmed Reservation</a></li>
+                            <li class="rooms"><a href="adminroom.php">Manage Room</a></li>
+                            <li class="contactus"><a href="adminreport.php">Manage Report</a></li>
+                            <li class="aboutus"><a href="admincustomer.php">Manage Customer</a></li>
+                            </ul>
+                        </nav>
+                        <a class="navbarlogo" href="index.php">
+                            <img alt="logo" src="../images/logos/FleurSuitesLogo.png"/>
+                        </a> 
+                    </div>  
+                </header>
     <head>
         <title>Manage Report || Fleur Suites</title>
-        <script src="js/jquery.js"></script>
-        <script src="js/navscroll.js"></script>
-        <script src="js/homeSlideshow.js"></script>
-        <link rel="shortcut icon" href="images/title.ico">
-        <link rel="stylesheet" type="text/css" href="styles/adminstyle.css">
-        <link rel="stylesheet" type="text/css" href="styles/navbarstyle.css">
-        <link rel="stylesheet" type="text/css" href="styles/slideshowstyle.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/navscroll.js"></script>
+        <script src="../js/homeSlideshow.js"></script>
+        <link rel="shortcut icon" href="../images/title.ico">
+        <link rel="stylesheet" type="text/css" href="../styles/adminstyle.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navbarstyle.css">
+        <link rel="stylesheet" type="text/css" href="../styles/slideshowstyle.css">
+        <link rel="stylesheet" type="text/css" href="../styles/myreservationstyle.css">
     </head>
 
     <body>
-        <header>
-            <div class="navbar">       
-                <nav class="mynavbar">
-                    <ul>
-                        <li class="login"><a href="logout.php">logout</a></li>
-                    </ul>
-                </nav>
-                <nav class="navbar">
-                    <ul>
-                    <li class="home"><a href="adminhome.php">Request Reservation</a></li>
-                    <li class="policy"><a href="adminconfirmreservation.php">Comfirmed Reservation</a></li>
-                    <li class="rooms"><a href="adminroom.php">Manage Room</a></li>
-                    <li class="contactus"><a href="adminreport.php">Manage Report</a></li>
-                    <li class="aboutus"><a href="admincustomer.php">Manage Customer</a></li>
-                    </ul>
-                </nav>
-                <a class="navbarlogo" href="aboutme.html">
-                    <img alt="logo" src="images/logos/FleurSuitesLogo.png"/>
-                </a> 
-            </div>  
-        </header>   
+      
 
         <div class="backgroundrooms">
-            <img src="images/room1.png" style="width:100%">
+                <img src="../images/room1.png" style="width:100%">
         </div>
 
         <div class="roomsstatement">
@@ -42,39 +58,68 @@
         </div>
 
         <div class="roomsbody">
-            <div class="roomsbodystatement">    
-</div>
+            <div class="roomsbodystatement">
+                <p align="center" class="roomsbodystatement">
+                   
+                </p>
+   
+                </div> 
             <div class="managereservation">
-                <div class="manager">
-                <p align="center" class="juniorsuitestatement">
-                       Customers Report
+                
+                
+                    <p align="center" class="juniorsuitestatement">
+                       List of Customer Reports
+                      
                     </p>
-                    <div class="table">
-                    <table>
+                    <table class="myreservationstable">
                         <thead>
                         <tr>
+                         
                             <th>Name</th>
-                            <th>Subject</th>
                             <th>Email</th>
+                            <th>Subject</th>
                             <th>Message</th>
-                            
+                         
+                            <th></th>
                         </tr>
-                        </thead>
-                       
-                    <tbody>
+                        </thead>                      
+                  <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Dummy</td>
-                            <td>Dec 12</td>
-                            <td>Dec 23</td>
-                            <td><a href="deletecomplaint.php?delete=yes & c_id=<?php echo $values['c_id']; ?>">DELETE</a>
-                        </tr>
+
+<?php 
+$conn = mysqli_connect ("localhost","root","","hoteldb");		
+$sql = "SELECT * from report";	
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+$purchaserows= $result;
+} 
+if (empty($purchaserows)) {
+
+}else{
+
+foreach($purchaserows as $index => $values): 
+$reportid=$values['reportid'];			
+$name=$values['name']; 
+$email=$values['email'];
+$subject=$values['subject'];
+$message=$values['message'];
+
+?>
+<td><?php echo $name; ?></td>
+<td><?php echo $email; ?></td>
+<td><?php echo $subject; ?></td>
+<td><?php echo $message; ?></td>
+<td><a href="deletereport.php?delete=yes & reportid=<?php echo $values['reportid']; ?>">DELETE</a>
+</td>
+</tr>
+<?php endforeach; ?>
+<?php } ?>
                   </tbody>
                   </table>
-                  </div>   
-              
-        </div>
-        </div>
+
+                  </div>           
+                 
     </body>
 
 </html>

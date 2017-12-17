@@ -22,8 +22,8 @@
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
                                 <li class="rooms"><a href="rooms.php">Rooms</a></li>
-                                <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
-                                <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
+                                <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
+                                <li class="policy"><a href="../policy.php">Policy</a></li>
                             </ul>
                         </nav>
                         <a class="navbarlogo" href="../index.php">
@@ -49,8 +49,9 @@
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
                                 <li class="rooms"><a href="rooms.php">Rooms</a></li>
-                                <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
-                                <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
+                                <li class="contactus"><a href="../contactus.php">Contact Us</a></li>
+                                <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
+                                <li class="policy"><a href="../policy.php">Policy</a></li>
                             </ul>
                         </nav>
                         <a class="navbarlogo" href="../index.php">

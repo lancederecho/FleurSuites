@@ -37,7 +37,7 @@
         echo "
         <script>
             window.alert('Login to continue!');
-            window.location.href=\"../index.php\";
+            window.location.href=\"../account/login.php\";
         </script>";
     }
 ?>
@@ -48,23 +48,23 @@
         <script src="../js/jquery.js"></script>
         <script src="../js/navscroll.js"></script>
         <link rel="shortcut icon" href="../images/title.ico">
-        <link rel="stylesheet" type="text/css" href="../styles/roomsstyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/navbarstyle.css">
+        <link rel="stylesheet" type="text/css" href="../styles/myreservationstyle.css">
     </head>
 
     <body>
-        <div class="backgroundrooms">
+        <div class="backgroundrmyreservations">
             <img src="../images/room1.png" style="width:100%">
         </div>
 
-        <div class="roomsstatement">
-            <p align="center" class="roomsstatement">MY RESERVATIONS</p>
+        <div class="myreservationsstatement">
+            <p align="center" class="myreservationsstatement">MY RESERVATIONS</p>
         </div>
 
-        <div class="roomsbody">
-            <div class="complaintbody">
-                <div class="complainttable">
-                    <table class="complainttable">
+        <div class="myreservationsbody">
+            <div class="myreservationstablebody">
+                <div class="myreservationstable">
+                    <table class="myreservationstable">
                         <thead>
                             <tr>
                                 <th>Room Type</th>
@@ -75,42 +75,45 @@
                                 <th>Check-out Date</th>
                                 <th>Number of Days</th>
                                 <th>Status</th>
+                                <th class="action">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             
                         <?php
                             $count = 0;
-
-                            foreach($rows as $index => $values){
-                                $userid = $values['userid'];
- 
-                                if($userid == $_SESSION['userid']){
-                                    foreach($roomsrows as $roomsindex => $roomsvalues){
-                                        $roomid = $roomsvalues['roomid'];
-        
-                                        if($roomid == $values['roomid']){
-                                            if($count == 0) {
-                                            echo"<tr>
-                                                <th>".$roomsvalues['type']."</th>
-                                                <th>".$roomsvalues['numbedding']." ".$roomsvalues['bedding']."(s)</th>
-                                                <th>".$roomsvalues['size']."</th>
-                                                ";
-                                            }    
+                            if ($rows > 0) {
+                                foreach($rows as $index => $values){
+                                    $userid = $values['userid'];
+                                    $reserveid = $values['reserveid'];
+    
+                                    if($userid == $_SESSION['userid']){
+                                        foreach($roomsrows as $roomsindex => $roomsvalues){
+                                            $roomid = $roomsvalues['roomid'];
+            
+                                            if($roomid == $values['roomid']){
+                                                if($count == 0) {
+                                                echo"<tr>
+                                                    <td>".$roomsvalues['type']."</td>
+                                                    <td>".$roomsvalues['numbedding']." ".$roomsvalues['bedding']."(s)</td>
+                                                    <td>".$roomsvalues['size']."</td>
+                                                    ";
+                                                }    
+                                            }
                                         }
+                                        echo"
+                                            <td>".$values['datereserved']."</td>
+                                            <td>".$values['checkin']."</td>
+                                            <td>".$values['checkout']."</td>
+                                            <td>".$values['numofdays']."</td>
+                                            <td>".$values['status']."</td>
+                                            <td class='action'>
+                                                <form action='?id=$reserveid' method='POST'>
+                                                    <input type='submit' value='Cancel' class='cancel' name='cancel'>
+                                                </form>
+                                            </td>
+                                            ";
                                     }
-                                    echo"
-                                        <th>".$values['datereserved']."</th>
-                                        <th>".$values['checkin']."</th>
-                                        <th>".$values['checkout']."</th>
-                                        <th>".$values['numofdays']."</th>
-                                        <th>".$values['status']."</th>
-                                        <th>
-                                        <form action='edit.php' method='POST'>
-                                            <input type='submit' value='Cancel' id='cancel' name='cancel'>
-                                            </form>
-                                        </th>
-                                        ";
                                 }
                             }
                         ?>

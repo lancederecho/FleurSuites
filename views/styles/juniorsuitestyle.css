@@ -545,15 +545,32 @@ p.juniorsuitecheckinoutpricepernight{
     opacity: .9;
 }
 
+div.juniorsuitechecktime{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 8%;
+    width: 80%;
+}
+
+input.juniorsuitechecktime{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 1px rgb(199, 199, 199);
+    cursor: pointer;
+    text-align: center;
+}
+
 div.juniorsuitecheckin{
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 10%;
-    height: 15%;
+    height: 13%;
     width: 80%;
 }
 
-div.juniorsuitecheckin input{
+input.juniorsuitecheckin{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -564,27 +581,19 @@ div.juniorsuitecheckin input{
 
 div.juniorsuitecheckout{
     position: absolute;
-    top: 62%;
+    top: 65%;
     left: 10%;
-    height: 15%;
+    height: 13%;
     width: 80%;
 }
 
-div.juniorsuitecheckout input{
+input.juniorsuitecheckout{
     position: absolute;
     height: 100%;
     width: 100%;
     border: solid 1px rgb(199, 199, 199);
     cursor: pointer;
     text-align: center;
-}
-
-div.juniorsuitecheckout{
-    position: absolute;
-    top: 62%;
-    left: 10%;
-    height: 15%;
-    width: 80%;
 }
 
 div.juniorsuitecheckinoutreserve{
