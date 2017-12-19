@@ -60,9 +60,8 @@
             <div class="policy">
                 <p class="contactus">
                     FLEUR SUITES DAVAO 
-                    RESERVATION POLICY <br> <br> <br>
-                    Check-in at: 3:00PM <br>
-                    Check-out at 12:00PM
+                    RESERVATION POLICY <br>
+                    
                 </p> 
 
                 <p class="policy">
@@ -71,10 +70,9 @@
                 Please note that for security purposes, you will be asked to provide a validated 
                 Identification card at check-in. <br> <br> <br> <br>
 
-                <b>Guarantee Policy</b>  <br> <br>
+                <b>Payment Policy</b>  <br> <br>
 
-                Reservation must be guaranteed by a major credit card at the time of booking. 
-                Card will not be charged until time of departure. <br> <br> <br> <br>
+                Customer should pay for the reservation fee directly to the hotel cashier(Reason: This is because the hotel is in its building phase thats why the hotel is skeptical to provide bank information). <br> <br> <br> <br>
 
                 <b>Cancellation Policy</b> <br> <br>
 

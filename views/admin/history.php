@@ -68,8 +68,6 @@
    
                 </div> 
             <div class="managereservation">
-                
-                
                     <p align="center" class="juniorsuitestatement">
                        Reservation History
                       
@@ -84,6 +82,7 @@
                             <th>Reservation ID</th>
                             <th>Confirmation Date</th>
                             <th>Reservation Date</th>
+                            <th>Check In/Out Time</th>
                             <th>Check In</th>
                             <th>Check Out</th>
                             <th>No. of Days</th>
@@ -113,6 +112,7 @@
                                     <td>".$values['reserveid']."</td>
                                     <td>".$values['dateconfirmed']."</td>
                                     <td>".$values['datereserved']."</td>
+                                    <td>".$values['checktime']."</td>
                                     <td>".$values['checkin']."</td>
                                     <td>".$values['checkout']."</td>
                                     <td>".$values['numofdays']."</td>

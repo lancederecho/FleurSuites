@@ -1,9 +1,8 @@
-<?php include "../../models/DBConnection.php"; ?>
+<?php include "../models/DBConnection.php"; ?>
 
 
 <?php
-    
-	class Rooms extends DBConnection{
+	class Rooms1 extends DBConnection{
 		function select_all_user(){
 			$query = "SELECT * FROM user";
 			$result = mysqli_query($this->conn, $query);			
@@ -17,13 +16,16 @@
 		}
 
 
-		function insert_room($type, $price, $numbedding, $bedding, 
-                $size, $accomodates, $moreinfo, $amenities){
-			$query = "INSERT INTO rooms (type, price, numbedding, bedding, 
-                size, accomodates, moreinfo, amenities)
-				VALUES (\"".$type."\", \"".$price."\", \"".$numbedding."\", 
-					\"".$bedding."\", \"".$size."\", \"".$accomodates."\", \"".$moreinfo."\", 
-					\"".$amenities."\")";
+		function insert_room($registeremail, $registerpass, $registertitle, $registerfirst, 
+                $registerlast, $registergender, $birthdate, $registerline1, $registercity, $registercountry, 
+				$registerline2, $registerpostalcode, $registercountrycode, $registerphonenum){
+			$query = "INSERT INTO user (useremail, userpassword, usertitle, userfirstname, 
+                userlastname, usergender, userbirthdate, useraddressline1, usercity, usercountry, 
+				useraddressline2, userpostalcode, usercountrycode, userphonenumber)
+				VALUES (\"".$registeremail."\", \"".$registerpass."\", \"".$registertitle."\", 
+					\"".$registerfirst."\", \"".$registerlast."\", \"".$registergender."\", \"".$birthdate."\", 
+					\"".$registerline1."\", \"".$registercity."\", \"".$registercountry."\", \"".$registerline2."\", 
+					\"".$registerpostalcode."\", \"".$registercountrycode."\", \"".$registerphonenum."\")";
 
 			$result = mysqli_query($this->conn, $query);
 
@@ -68,11 +70,11 @@
 			return($result->num_rows>0)? $res: FALSE;
 		}
 
-		function insert_roomreservation($time, $datereserved, $checkin, $checkout, $numofdays, $roomid, 
+		function insert_roomreservation($checktime, $datereserved, $checkin, $checkout, $numofdays, $roomid, 
                 $userid){
 			$query = "INSERT INTO roomreserve (checktime, datereserved, checkin, checkout, numofdays, roomid, 
                 userid)
-				VALUES (\"".$time."\", \"".$datereserved."\", \"".$checkin."\", \"".$checkout."\", 
+				VALUES (\"".$checktime."\", \"".$datereserved."\", \"".$checkin."\", \"".$checkout."\", 
 					\"".$numofdays."\", \"".$roomid."\", \"".$userid."\")";
 
 			$result = mysqli_query($this->conn, $query);
@@ -94,22 +96,6 @@
 		function update_rooms($roomid, $userid) {
 			$query = "UPDATE rooms SET
 					userid =\"".$userid."\"WHERE roomid = \"".$roomid."\" ";
-
-			$result = mysqli_query($this->conn,$query);
-			return(($result)?TRUE:FALSE);
-
-			if(!$result)
-			{
-				echo 'Data Not Updated';
-			}
-		}
-
-		function update_roomstatus($roomid, $userid, $adminid, $status) {
-			$query = "UPDATE rooms SET
-					userid =\"".$userid."\",
-					adminid =\"".$adminid."\",
-					status =\"".$status."\"
-					WHERE roomid = \"".$roomid."\" ";
 
 			$result = mysqli_query($this->conn,$query);
 			return(($result)?TRUE:FALSE);

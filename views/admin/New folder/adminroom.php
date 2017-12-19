@@ -72,8 +72,7 @@
                             <td>Dummy</td>
                             <td>Dec 12</td>
                             <td>Dec 23</td>
-                            <td><a href="deletecomplaint.php?delete=yes & c_id=<?php echo $values['c_id']; ?>">DELETE</a>
-                            <td><a href="updatecomplaint.php?update=yes & c_id=<?php echo $values['c_id']; ?>">UPDATE</a>
+                            <td><a href="deletecomplaint.php?delete=yes & c_id=""">DELETE</a>
                         </tr>
                   </tbody>
                   </table>

@@ -36,7 +36,7 @@ if(!isset($_SESSION['adminfirstname'])){
                </div>  
            </header>
 <head>
-   <title>Manage Report || Fleur Suites</title>
+   <title>Manage Rooms || Fleur Suites</title>
    <script src="../js/jquery.js"></script>
    <script src="../js/navscroll.js"></script>
    <script src="../js/homeSlideshow.js"></script>
@@ -71,23 +71,26 @@ if(!isset($_SESSION['adminfirstname'])){
            
                <p align="center" class="juniorsuitestatement">
                   Manage Rooms  </p>  
+        <div class="addrooms">
+            <a href="addrooms.php" class="addrooms">Add</a>
+        </div>
                
               
 <br> 
                <table class="myreservationstable">
                    <thead>
                    <tr>
-                    
-                       <th>Room ID</th>
-                       <th>Room name</th>
-                       <th>Room Price</th>
-                       <th>No. of Bed</th>
-                       <th>Room Type</th>
-                       <th>Room Size</th>
-                       <th>Amenities</th>
-                       <th>Status</th>
-                    
-                       <th>Action</th>
+                        <th>Room ID</th>
+                        <th>Room name</th>
+                        <th>Room Price</th>
+                        <th>No. of Bed</th>
+                        <th>Room Type</th>
+                        <th>Room Size</th>
+                        <th>Amenities</th>
+                        <th>Current Customer</th>
+                        <th>Admin ID</th>
+                        <th>Status</th>
+                        <th>Action</th>
                    </tr>
                    </thead>
                   
@@ -95,17 +98,26 @@ if(!isset($_SESSION['adminfirstname'])){
                    <tr>
                    <?php 
 $conn = mysqli_connect ("localhost","root","","hoteldb");		
-$sql = "SELECT * from rooms";	
+
+$sql = "SELECT * from rooms";
+$usersql = "SELECT * from user";	
+
 $result = $conn->query($sql);
+$userresult = $conn->query($usersql);
+
+$count = 0;
 
 if ($result->num_rows > 0) {
 $user= $result;
 } 
+if($userresult->num_rows > 0) {
+$name= $userresult;
+}
 if (empty($user)) {
 
 }else{
 
-foreach($user as $index => $values): 			
+foreach($user as $index => $values) {		
 $roomid=$values['roomid']; 
 $type=$values['type']; 
 $price=$values['price']; 
@@ -114,6 +126,29 @@ $bedding=$values['bedding'];
 $size=$values['size'];
 $amennities=$values['amenities']; 
 $status=$values['status'];
+$userid = $values['userid'];
+if ($values['adminid'] > 0) {
+    $adminid = $values['adminid'];
+} else {
+    $adminid = " ";
+}
+
+if ($status == "Taken") {
+foreach($name as $userindex => $uservalues){
+    $userid = $values['userid'];
+    if($count == 0){
+        if($userid == $uservalues['userid']){
+            $firstname = $uservalues['userfirstname'];
+            $lastname = $uservalues['userlastname'];
+/*             $count++; */
+        }
+    }
+}
+} else {
+        $firstname = "No";
+        $lastname = "Customer";    
+}
+
 
 
 ?>
@@ -124,12 +159,22 @@ $status=$values['status'];
 <td><?php echo $bedding; ?></td>
 <td><?php echo $size; ?></td>
 <td><?php echo $amennities; ?></td>
+<td><?php
+    echo $firstname; 
+    echo " ";
+    echo $lastname;
+    ?>
+</td>
+<td><?php echo $adminid; ?></td>
 <td><?php echo $status; ?></td>
-
-<td><a href="">DELETE</a>
+<?php
+echo"
+    <td><a href='deleteroomfunction.php?delete=yes & roomid=$roomid'>DELETE</a>
+";
+?>
 </td>
 </tr>
-<?php endforeach; ?>
+<?php } ?>
 <?php } ?>
              </tbody>
              </table>

@@ -11,7 +11,7 @@
                         <nav class="mynavbar">
                             <ul>
                                 <li class="myreservations"><a href="transaction/myreservations.php">My Reservations</a></li>
-                                <li class="userprofile"><a href="../controllers/logoutfunction.php">
+                                <li class="userprofile"><a href="account/profile.php">
                                     <?php
                                         echo $_SESSION['userfirstname'];
                                     ?>
@@ -90,7 +90,7 @@
                 <p class="backgroundtext">FLEUR SUITES</p>
             </div>
             <div align="center" class="backgroundbutton">
-                <a class="backgroundbutton" href="rooms.php">Get a Room ></a> 
+                <a class="backgroundbutton" href="rooms/rooms.php">Get a Room ></a> 
             </div>
         </div>
  <!--        <div class="slideshow">
@@ -145,21 +145,21 @@
             <div class="homerooms">
                 <img class=homerooms src="images/room1.png" style="width:100%"> 
                 <div align="center" class="homeroomsbutton">
-                    <a href="rooms.php" class="homeroomsbutton">Rooms</a>
+                    <a href="rooms/rooms.php" class="homeroomsbutton">Rooms</a>
                 </div>   
             </div>
 
             <div class="homeaboutus">
                 <img class=homeaboutus src="images/room2.png" style="width:100%">
                 <div align="center" class="homeaboutusbutton">
-                    <a href="rooms.php" class="homeaboutusbutton">About Us</a>
+                    <a href="aboutus.php" class="homeaboutusbutton">About Us</a>
                 </div>  
             </div>
             
             <div class="homecontactus">
                 <img class=homecontactus src="images/room4.png" style="width:100%">
                 <div align="center" class="homecontactusbutton">
-                    <a href="rooms.php" class="homecontactusbutton">Contact Us</a>
+                    <a href="contactus.php" class="homecontactusbutton">Contact Us</a>
                 </div>  
             </div>
             

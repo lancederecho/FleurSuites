@@ -1,6 +1,6 @@
-<?php include "../../controllers/reservationfunction.php"; ?>
-
 <?php
+
+    session_start();
     if ($_SESSION && isset($_SESSION['userfirstname'])) {
         if (isset($_SESSION['type'])) {
             ?>
@@ -125,12 +125,12 @@
                                     </div>
                                     <div class="guestdetailspolicy">
                                         <p class="guestdetailspolicy">
-                                            • By completing this reservation I acknowledge I have read and accepted the Property Policies.
+                                            • By completing this reservation I acknowledge I have read and accepted the <a target="_blank"href="../policy.php">Property Policies</a>.
                                         </p>
                                     </div>
                                     <div class="reserveyourroom">
-                                        <form action="" method="post">
-                                        <input type="submit" name="reserveyourroombutton" class="reserveyourroombutton" value="Reserve Your Room">
+                                        <form action="../../controllers/reservationfunction.php" method="post">
+                                            <input type="submit" name="reserveyourroombutton" class="reserveyourroombutton" value="Reserve Your Room">
                                         </form>
                                     </div>
                                 </div>
@@ -168,14 +168,34 @@
                                                 </p>
                                             </div>
                                             <div class="ordersummarydatescheckin">
-                                                <p class="ordersummarydatescheckin">
-                                                    <?php echo $_SESSION['checkin']; ?>  
-                                                </p>
+                                                <li class="ordersummarydatescheckin">
+                                                    <?php 
+                                                        echo $_SESSION['checkin']; 
+                                                        echo " ";
+                                                    ?>    
+                                                </li>
+                                                <li class="ordersummarydatescheckinat">
+                                                    @
+                                                    <?php
+                                                    echo " ";      
+                                                        echo $_SESSION['time']; 
+                                                    ?>    
+                                                </li>
                                             </div >
                                             <div class="ordersummarydatescheckout">
-                                                <p class="ordersummarydatescheckout">
-                                                    <?php echo $_SESSION['checkout']; ?> 
-                                                </p>
+                                                <li class="ordersummarydatescheckout">
+                                                    <?php 
+                                                        echo $_SESSION['checkout']; 
+                                                        echo " ";
+                                                    ?>    
+                                                </li>
+                                                <li class="ordersummarydatescheckinat">
+                                                    @
+                                                    <?php
+                                                    echo " ";      
+                                                        echo $_SESSION['time']; 
+                                                    ?>    
+                                                </li>
                                             </div>
                                         </div>  
                                         <div class="ordersummarynights">

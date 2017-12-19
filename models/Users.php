@@ -22,6 +22,25 @@
 			exit;
 		}
 
+		function update_user($firstname, $lastname, $email, $gender, $birthdate, $addressline, 
+                        $city, $country, $countrycode, $phonenumber, $curid) {
+			   	$query = "UPDATE user SET userfirstname =\"".$firstname."\",
+						userlastname =\"".$lastname."\", useremail =\"".$email."\", 
+						usergender =\"".$gender."\", userbirthdate =\"".$birthdate."\", 
+						useraddressline1 =\"".$addressline."\", usercity =\"".$city."\", 
+						usercountry =\"".$country."\", usercountrycode =\"".$countrycode."\", 
+						userphonenumber =\"".$phonenumber."\"
+						WHERE userid = \"".$curid."\" ";
+
+			  	$result = mysqli_query($this->conn,$query);
+		 		return(($result)?TRUE:FALSE);
+
+			   if(!$result)
+			   {
+			       echo 'Data Not Updated';
+			   }
+		}
+
 		function select_all_user(){
 			$query = "SELECT * FROM user";
 			$result = mysqli_query($this->conn, $query);			

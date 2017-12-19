@@ -293,7 +293,7 @@
                             </p>                            
                         </div>  
                         <div class="superiorroommoretermstitle">
-                            <a href="" class="superiorroommoretermstitle">
+                            <a href="../policy.php" class="superiorroommoretermstitle">
                                 Read Our Policies
                             </a>
                         </div>                      

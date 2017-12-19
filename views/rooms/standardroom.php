@@ -264,7 +264,7 @@
                             </p>                            
                         </div>   
                         <div class="standardroommoretermstitle">
-                            <a href="" class="standardroommoretermstitle">
+                            <a href="../policy.php" class="standardroommoretermstitle">
                                 Read Our Policies
                             </a>
                         </div>                     

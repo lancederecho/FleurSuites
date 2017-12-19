@@ -22,8 +22,9 @@
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
                                 <li class="rooms"><a href="../rooms/rooms.php">Rooms</a></li>
-                                <li class="contactus"><a href="../contactus.html">Contact Us</a></li>
-                                <li class="aboutus"><a href="../aboutus.html">About Us</a></li>
+                                <li class="contactus"><a href="../contactus.php">Contact Us</a></li>
+                                <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
+                                <li class="policy"><a href="../policy.php">Policy</a></li>
                             </ul>
                         </nav>
                         <a class="navbarlogo" href="../index.php">
@@ -86,6 +87,7 @@
                                 foreach($rows as $index => $values){
                                     $userid = $values['userid'];
                                     $reserveid = $values['reserveid'];
+                                    $roomsid = $values['roomid'];
     
                                     if($userid == $_SESSION['userid']){
                                         foreach($roomsrows as $roomsindex => $roomsvalues){
@@ -107,12 +109,24 @@
                                             <td>".$values['checkout']."</td>
                                             <td>".$values['numofdays']."</td>
                                             <td>".$values['status']."</td>
-                                            <td class='action'>
-                                                <form action='?id=$reserveid' method='POST'>
-                                                    <input type='submit' value='Cancel' class='cancel' name='cancel'>
-                                                </form>
-                                            </td>
                                             ";
+                                        if($values['status'] == "pending") {
+                                            echo"
+                                                <td class='action'>
+                                                    <form action='?delete=yes & reserveid=$reserveid & roomid=$roomsid' method='POST'>
+                                                        <input type='submit' value='Cancel' class='cancel' name='cancel'>
+                                                    </form>
+                                                </td>
+                                            ";
+                                        } else if($values['status'] == "confirmed") {
+                                            echo"
+                                                <td class='action'>
+                                                    <form action='?delete=yes & reserveid=$reserveid & roomid=$roomsid' method='POST'>
+                                                        <input type='submit' value='Checkout' class='cancel' name='checkout'>
+                                                    </form>
+                                                </td>
+                                            ";
+                                        }
                                     }
                                 }
                             }

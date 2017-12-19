@@ -1,7 +1,9 @@
 <?php
 	include "config.php";
 				
-    $reserveid = $_REQUEST['reserveid'];
+	$reserveid = $_REQUEST['reserveid'];
+	$userid = NULL;
+	$adminid = NULL;
     $roomid = $_REQUEST['roomid'];
 
 $sql = "DELETE FROM roomreserve where reserveid='$reserveid'";
@@ -9,7 +11,9 @@ $sql = "DELETE FROM roomreserve where reserveid='$reserveid'";
 $roomstatus="Free";
 
 $roomsql = "UPDATE rooms SET 
-			   			status =\"".$roomstatus."\"
+						   status =\"".$roomstatus."\",
+						   userid=\"".$userid."\",
+						   adminid=\"".$userid."\"
 						WHERE roomid = \"".$roomid."\" ";
 
 

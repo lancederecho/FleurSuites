@@ -82,6 +82,7 @@ if(!isset($_SESSION['adminfirstname'])){
                             <th>User Name</th>
                             <th>Reservation ID</th>
                             <th>Reservation date</th>
+                            <th>Check In/Out Time</th>
                             <th>Check In</th>
                             <th>Check Out</th>
                             <th>No. of Days</th>
@@ -117,6 +118,7 @@ if(!isset($_SESSION['adminfirstname'])){
                                     echo"
                                         <td>".$values['reserveid']."</td>
                                         <td>".$values['datereserved']."</td>
+                                        <td>".$values['checktime']."</td>
                                         <td>".$values['checkin']."</td>
                                         <td>".$values['checkout']."</td>
                                         <td>".$values['numofdays']."</td>

@@ -1,4 +1,4 @@
-<?php include "../../models/Rooms.php"; ?>
+<?php include "../models/Rooms.1.php"; ?>
 
 <?php
 
@@ -12,7 +12,9 @@
     ";
 
     //datereserved
-	$datereserved = date("Y-m-d");
+    $datereserved = date("Y-m-d");
+    //check time
+    $checktime = isset($_SESSION['time'])? $_SESSION["time"]:NULL;
     //checkin date
     $checkin = isset($_SESSION['checkin'])? $_SESSION["checkin"]:NULL;
     //checkout date
@@ -25,14 +27,14 @@
     $userid = isset($_SESSION['userid'])? $_SESSION["userid"]:NULL;
     //admin
 
-	$reserve = new Rooms();
+	$reserve = new Rooms1();
  
 	if(isset($_REQUEST['reserveyourroombutton']) && $_REQUEST['reserveyourroombutton'] == "Reserve Your Room"){
-        $result = $reserve->insert_roomreservation($datereserved, $checkin, $checkout, $numofdays, $roomid, 
+        $result = $reserve->insert_roomreservation($checktime, $datereserved, $checkin, $checkout, $numofdays, $roomid, 
                 $userid);
 		if($result){
-            $reserve->update_rooms($roomid, $userid);
             //Unsettting room sessions
+            unset($_SESSION['time']);
             unset($_SESSION['checkin']);
             unset($_SESSION['checkout']);
             unset($_SESSION['numofdays']);
@@ -49,6 +51,10 @@
             echo "
             <script>
                 window.alert('Your Reservation application has been sent');
+            </script>";
+            echo "
+            <script>
+                window.location.href=\"../views/rooms/rooms.php\";
             </script>";
         }
         

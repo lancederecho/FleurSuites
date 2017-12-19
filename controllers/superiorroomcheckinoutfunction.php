@@ -5,6 +5,7 @@
         $checkindate = date("Y-m-d"); ////sample
         $checkoutdate = date("Y-m-d", strtotime('+1 day', time())); ////sample
 
+        $time = isset($_REQUEST['superiorroomchecktime'])? $_REQUEST["superiorroomchecktime"]:NULL;
         $checkin = isset($_REQUEST['superiorroomcheckin'])? $_REQUEST["superiorroomcheckin"]:NULL;
         $checkout = isset($_REQUEST['superiorroomcheckout'])? $_REQUEST["superiorroomcheckout"]:NULL;
 
@@ -39,6 +40,7 @@
                             window.alert('Enter valid check-in and check-out dates');
                         </script>";
                 } else {
+                        $_SESSION['time'] = $time;
                         $_SESSION['checkin'] = $checkin;
                         $_SESSION['checkout'] = $checkout;
                         $_SESSION['numofdays'] = $validdays;

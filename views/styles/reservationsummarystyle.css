@@ -422,13 +422,26 @@ div.ordersummarydatescheckin{
     right: 0%;
 }
 
-p.ordersummarydatescheckin{
+li.ordersummarydatescheckin{
     margin: 0;
     font-family: sans-serif;
     color: #222;
     font-size: 15;
     font-weight: bold;
     opacity: .9;
+    list-style: none;
+    display: inline-block;
+}
+
+li.ordersummarydatescheckinat{
+    margin: 0;
+    font-family: sans-serif;
+    color: #222;
+    font-size: 12;
+    font-weight: bold;
+    opacity: .9;
+    list-style: none;
+    display: inline-block;
 }
 
 div.ordersummarydatescheckout{
@@ -439,13 +452,15 @@ div.ordersummarydatescheckout{
     right: 0%;
 }
 
-p.ordersummarydatescheckout{
+li.ordersummarydatescheckout{
     margin: 0;
     font-family: sans-serif;
     color: #222;
-    font-weight: bold;
     font-size: 15;
+    font-weight: bold;
     opacity: .9;
+    list-style: none;
+    display: inline-block;
 }
 
 /* Num of Nights*/

@@ -83,6 +83,7 @@
                             <th>User Name</th>
                             <th>Reservation ID</th>
                             <th>Reservation date</th>
+                            <th>Check In/Out Time</th>
                             <th>Check In</th>
                             <th>Check Out</th>
                             <th>No. of Days</th>
@@ -119,6 +120,7 @@
                                                                     
                                     $_SESSION['historyreserveid']=$values['reserveid'];
                                     $_SESSION['historydatereserved']=$values['datereserved'];
+                                    $_SESSION['historychecktime']=$values['checktime'];
                                     $_SESSION['historycheckin']=$values['checkin'];
                                     $_SESSION['historycheckout']=$values['checkout'];
                                     $_SESSION['historynumofdays']=$values['numofdays'];
@@ -128,6 +130,7 @@
                                     echo"
                                         <td>".$values['reserveid']."</td>
                                         <td>".$values['datereserved']."</td>
+                                        <td>".$values['checktime']."</td>
                                         <td>".$values['checkin']."</td>
                                         <td>".$values['checkout']."</td>
                                         <td>".$values['numofdays']."</td>
@@ -137,7 +140,7 @@
                                             <a href='deletereservation.php?delete=yes & reserveid=$reserveid'>DELETE</a>
                                         </td>
                                          <td>
-                                            <a href='confirmreservation.php?confirm=yes & roomid=$roomid & reserveid=$reserveid'>CONFIRM</a>
+                                            <a href='confirmreservation.php?confirm=yes & roomid=$roomid & reserveid=$reserveid & userid=$userid'>CONFIRM</a>
                                         </td>
                                         ";
                                 }

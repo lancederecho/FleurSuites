@@ -22,6 +22,7 @@
                             <ul>
                                 <li class="home"><a href="../index.php">Home</a></li>
                                 <li class="rooms"><a href="rooms.php">Rooms</a></li>
+                                <li class="contactus"><a href="../contactus.php">Contact Us</a></li>
                                 <li class="aboutus"><a href="../aboutus.php">About Us</a></li>
                                 <li class="policy"><a href="../policy.php">Policy</a></li>
                             </ul>
@@ -93,6 +94,11 @@
                 <div class="juniorsuiteimg">
                     <img src="../images/juniorSuite.png" style="width:100%">
                 </div>
+                <div class="juniorsuiteabout">
+                    <p align="left" class="juniorsuiteabout">
+                        <?php echo $juniormoreinfo; ?>
+                    </p>
+                </div>
                 <div class="juniorsuitestatement">
                     <p align="left" class="juniorsuitestatement">
                         <?php echo $juniortype; ?>
@@ -119,6 +125,11 @@
                 <div class="standardroomimg">
                     <img src="../images/standardRoom.png" style="width:100%">
                 </div>
+                <div class="standardroomabout">
+                    <p align="left" class="standardroomabout">
+                        <?php echo $standardmoreinfo; ?>
+                    </p>
+                </div>
                 <div class="standardroomstatement">
                     <p align="left" class="standardroomstatement">
                         <?php echo $standardtype; ?>
@@ -144,6 +155,11 @@
             <div class="superiorroom">
                 <div class="superiorroomimg">
                     <img src="../images/superiorRoom.png" style="width:100%">
+                </div>
+                <div class="superiorroomabout">
+                    <p align="left" class="superiorroomabout">
+                        <?php echo $superiormoreinfo; ?>
+                    </p>
                 </div>
                 <div class="superiorroomstatement">
                     <p align="left" class="superiorroomstatement">
