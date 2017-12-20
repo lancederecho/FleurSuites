@@ -12,7 +12,7 @@
                         <nav class="mynavbar">
                             <ul>
                                
-                                <li class="userprofile"><a href="../controllers/logoutfunction.php">
+                                <li class="userprofile"><a href="">
                                     <?php
                                         echo $_SESSION['adminfirstname'];
                                     ?>

@@ -9,7 +9,7 @@
     ";
 
     //email
-	$registeremail = isset($_REQUEST['registeremail'])? $_REQUEST["registeremail"]:NULL;
+    $registeremail = isset($_REQUEST['registeremail'])? $_REQUEST["registeremail"]:NULL;
     //password
     $registerpass = isset($_REQUEST['registerpass'])? $_REQUEST["registerpass"]:NULL;
     //title

@@ -68,7 +68,8 @@
                 Must be 18 or older to reserve a room. <br> <br>
 
                 Please note that for security purposes, you will be asked to provide a validated 
-                Identification card at check-in. <br> <br> <br> <br>
+                Identification card at check-in. <br> <br>
+                Customer Priority depends on who paid first.  <br> <br>
 
                 <b>Payment Policy</b>  <br> <br>
 
@@ -76,15 +77,12 @@
 
                 <b>Cancellation Policy</b> <br> <br>
 
-                Please let us know by 3PM PHT 24 hours before the check-in date if you need to cancel
-                 – if we don’t hear from you, we’ll need to charge one night's room and tax to your credit 
-                 card. If you paid in full in advance, we’re unable to refund your stay if you plans change.
-                  (Mostly we just really want to see you.)  Thanks for understanding. <br> <br> <br> <br>
+                Customer reservation will be cancelled if the customer is not yet around 12 hours after his/her reservation date.<br> <br> <br> <br>
 
                 <b>Non Refundable Cancellation Policy</b> <br> <br>
 
-                This reservation requires full pre-payment and is non-cancellable, non-amendable and non-refundable.
-                 We will charge the full amount of the reservation to the credit card you used to make this reservation 
+                This reservation requires full pre-payment and is non-amendable and non-refundable.
+                 We will charge the full amount of the reservation used to make this reservation 
                  shortly after the reservation is made.  <br> <br> <br> <br>
 
 

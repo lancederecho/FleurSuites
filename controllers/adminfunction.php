@@ -10,6 +10,7 @@
     $userrows = $reserve->select_all_user();
 
     $historyrows = $reserve->select_all_history();
+    
 	$reserve->close();
 
 ?>
